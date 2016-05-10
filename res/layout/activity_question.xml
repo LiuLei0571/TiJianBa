@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/org_background_grey"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/dimen_border_size_xnormal"
+        android:paddingTop="@dimen/dimen_border_size_xnormal"
+        android:text="@string/title_question"
+        android:textColor="@color/org_dark_gray"
+        android:textSize="@dimen/dimen_font_size_xnormal" />
+
+    <ImageView
+        android:id="@+id/iv_seperate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:background="@drawable/seperate" />
+
+    <RelativeLayout
+        android:id="@+id/rl_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/org_holo_grey"
+        android:paddingBottom="@dimen/dimen_border_size_xnormal"
+        android:paddingTop="@dimen/dimen_border_size_xnormal" >
+
+        <ImageView
+            android:id="@+id/iv_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/btn_upload" />
+
+        <TextView
+            style="@style/textview_subscribe"
+            android:layout_centerInParent="true"
+            android:text="@string/health_button_name"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_upload"
+        android:layout_below="@id/iv_seperate"
+        android:background="@color/white"
+        android:divider="@null"
+        android:scrollbars="@null" >
+    </ListView>
+
+    <include
+        android:id="@+id/ll_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_dialog_share"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/dialog"
+        layout="@layout/layout_dialog"
+        android:visibility="gone" />
+
+</RelativeLayout>

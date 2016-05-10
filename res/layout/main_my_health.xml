@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/org_background_grey"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/org_background_grey"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/dimen_border_size_small"
+            android:drawableRight="@drawable/title_ic_me"
+            android:paddingBottom="@dimen/dimen_border_size_xnormal"
+            android:paddingTop="@dimen/dimen_border_size_xnormal"
+            android:text="@string/my_health_me"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/dimen_font_size_xnormal" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:background="@drawable/line_wave" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_my_health"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_title"
+        android:background="@color/my_green_blue"
+        android:gravity="top"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_gray"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/rlyt_unlogin_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_my_info"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/img_my_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_my_info" />
+
+                    <TextView
+                        android:id="@+id/tv_mytext2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tv_mytext1"
+                        android:layout_below="@+id/tv_mytext1"
+                        android:layout_centerVertical="true"
+                        android:text="@string/str_myhealth_user_info2"
+                        android:textColor="@color/my_infor_text"
+                        android:textSize="@dimen/dimen_font_size_lsmall" />
+
+                    <TextView
+                        android:id="@+id/tv_mytext1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dimen_border_size_llarge"
+                        android:layout_marginTop="@dimen/dimen_border_size_llarge"
+                        android:paddingRight="@dimen/dimen_border_size_llarge"
+                        android:paddingTop="@dimen/dimen_border_size_normal"
+                        android:text="@string/str_myhealth_user_info1"
+                        android:textColor="@color/my_infor_text"
+                        android:textSize="@dimen/dimen_font_size_lsmall" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlyt_btn_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tv_mytext1"
+                        android:layout_below="@+id/tv_mytext2"
+                        android:layout_marginTop="@dimen/dimen_border_size_normal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/btn_my_info" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/str_myhealth_user_go"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimen_font_size_small" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlyt_login_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/img_login_myinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_login_myinfo" />
+
+                    <com.hengtiansoft.tijianba.util.CircleImageView
+                        android:id="@+id/img_login_mylogo"
+                        android:layout_width="@dimen/dimen_image_mylogo"
+                        android:layout_height="@dimen/dimen_image_mylogo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:src="@drawable/ic_login_mylogo" />
+
+                    <LinearLayout
+                        android:id="@+id/llyt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_login_mylogo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dimen_border_size_lsmall"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_login_myname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="pam"
+                            android:textColor="@color/my_logininfor_text"
+                            android:textSize="@dimen/dimen_font_size_xnormal" />
+
+                        <ImageView
+                            android:id="@+id/img_sex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:src="@drawable/ic_male" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llyt_other_infor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llyt_name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dimen_border_size_lsmall"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="健康基金"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/dimen_font_size_lsmall" />
+
+                        <TextView
+                            android:id="@+id/tv_cion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_border_size_lsmall"
+                            android:text="987"
+                            android:textSize="@dimen/dimen_font_size_xnormal" />
+
+                        <ImageView
+                            android:layout_marginLeft="@dimen/dimen_border_size_xxsmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_lemon_coin" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dimen_border_size_normal"
+                            android:background="@color/light_gray" />
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/dimen_border_size_normal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="今日任务"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/dimen_font_size_lsmall" />
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/dimen_border_size_lsmall"
+                            android:id="@+id/tv_task"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="987"
+                            android:textSize="@dimen/dimen_font_size_xnormal" />
+
+                        <ImageView
+                              android:layout_marginLeft="@dimen/dimen_border_size_xxsmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_today_task" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_border_size_xlsmall"
+                    android:background="@color/my_bill_text" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_health_bill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_border_size_xnormal" >
+
+                    <ImageView
+                        android:id="@+id/iv_health_bill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_health_bill" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dimen_border_size_small"
+                        android:layout_toRightOf="@id/iv_health_bill"
+                        android:gravity="center_vertical"
+                        android:text="@string/my_health_bill"
+                        android:textColor="@color/my_bill_text"
+                        android:textSize="@dimen/dimen_font_size_lsmall" />
+
+                    <TextView
+                        android:id="@+id/tv_health_bill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/str_edit"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/dimen_font_size_lsmall" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_unlogin_bill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_health_bill"
+                    android:layout_marginLeft="@dimen/dimen_border_size_small"
+                    android:layout_marginRight="@dimen/dimen_border_size_small"
+                    android:paddingBottom="@dimen/dimen_border_size_small" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_my_bill" />
+
+                    <TextView
+                        android:id="@+id/tv_mytext4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tv_mytext3"
+                        android:layout_below="@+id/tv_mytext3"
+                        android:layout_centerVertical="true"
+                        android:text="@string/str_myhealth_booklet_info2"
+                        android:textColor="@color/my_bill_text"
+                        android:textSize="@dimen/dimen_font_size_small" />
+
+                    <TextView
+                        android:id="@+id/tv_mytext3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dimen_border_size_large"
+                        android:layout_marginTop="@dimen/header_footer_left_right_padding"
+                        android:paddingRight="@dimen/dimen_border_size_llarge"
+                        android:text="@string/str_myhealth_booklet_info1"
+                        android:textColor="@color/my_bill_text"
+                        android:textSize="@dimen/dimen_font_size_small" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlyt_btn_bill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tv_mytext4"
+                        android:layout_below="@+id/tv_mytext4"
+                        android:layout_marginTop="@dimen/dimen_border_size_normal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/btn_my_bill" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/str_myhealth_booklet_addbooklet"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimen_font_size_small" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_login_bill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_health_bill"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:id="@+id/llyt_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_border_size_xxsmall"
+                        android:layout_marginRight="@dimen/dimen_border_size_xxsmall"
+                        android:orientation="vertical" />
+
+                    <ImageView
+                        android:id="@+id/img_seperate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llyt_chart"
+                        android:layout_marginTop="@dimen/dimen_border_size_small"
+                        android:background="@drawable/seperate" />
+
+                    <TextView
+                        android:id="@+id/tv_bill_addmore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_seperate"
+                        android:layout_marginTop="@dimen/dimen_border_size_small"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/dimen_border_size_small"
+                        android:text="@string/str_myhealth_addmore"
+                        android:textColor="@color/gray" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_border_size_normal"
+                android:background="@color/white" >
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_border_size_xlsmall"
+                    android:background="@color/my_report_text" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_health_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view"
+                    android:padding="@dimen/dimen_border_size_xnormal" >
+
+                    <ImageView
+                        android:id="@+id/iv_health_report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_health" />
+
+                    <TextView
+                        android:id="@+id/tv_report_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dimen_border_size_small"
+                        android:layout_toRightOf="@id/iv_health_report"
+                        android:gravity="center_vertical"
+                        android:text="@string/my_health_report"
+                        android:textColor="@color/my_report_text"
+                        android:textSize="@dimen/dimen_font_size_lsmall" />
+                    
+                    <ImageView   
+                         android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dimen_border_size_xxsmall"
+                        android:layout_toRightOf="@+id/tv_report_title"
+                        android:src="@drawable/ic_report_new"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_health_report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/str_edit"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/dimen_font_size_lsmall" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_unlogin_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_health_report" >
+
+                    <ImageView
+                             android:layout_marginLeft="@dimen/dimen_border_size_small"
+                    android:layout_marginRight="@dimen/dimen_border_size_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_my_report" />
+
+                    <TextView
+                        android:id="@+id/tv_mytext6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tv_mytext5"
+                        android:layout_below="@+id/tv_mytext5"
+                        android:layout_centerVertical="true"
+                        android:text="@string/str_myhealh_report"
+                        android:textColor="@color/my_report_text"
+                        android:textSize="@dimen/dimen_font_size_small" />
+
+                    <TextView
+                        android:id="@+id/tv_mytext5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dimen_border_size_large"
+                        android:layout_marginTop="@dimen/header_footer_left_right_padding"
+                        android:paddingRight="@dimen/dimen_border_size_llarge"
+                        android:text="@string/str_myhealth_booklet_info1"
+                        android:textColor="@color/my_report_text"
+                        android:textSize="@dimen/dimen_font_size_small" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlyt_btn_report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tv_mytext6"
+                        android:layout_below="@+id/tv_mytext6"
+                        android:layout_marginTop="@dimen/dimen_border_size_normal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/btn_my_report" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/str_myhealth_booklet_addbooklet"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimen_font_size_small" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_login_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_health_report"
+                    android:background="@color/white"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_report"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_border_size_xsmall" >
+
+                        <include
+                            android:id="@+id/rl_view_report"
+                            layout="@layout/layout_report" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/img_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_report"
+                        android:layout_marginTop="@dimen/dimen_border_size_normal"
+                        android:background="@drawable/seperate" />
+
+                    <TextView
+                        android:id="@+id/tv_watchlist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_view"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dimen_border_size_small"
+                        android:paddingBottom="@dimen/dimen_border_size_small"
+                        android:text="@string/str_myhealth_checklist"
+                        android:textColor="@color/gray" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

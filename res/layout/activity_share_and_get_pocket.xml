@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/detail_background_grey"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/rlyt_share_get"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tv_title_share_get"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/org_background_grey"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_border_size_xnormal"
+            android:paddingTop="@dimen/dimen_border_size_xnormal"
+            android:text="@string/str_share_get"
+            android:textColor="@color/edt_grey"
+            android:textSize="@dimen/dimen_font_size_xnormal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rlyt_dialog_share"
+            android:layout_below="@+id/tv_title_share_get"
+            android:layout_marginLeft="@dimen/dimen_border_size_xlarge"
+            android:layout_marginRight="@dimen/dimen_border_size_xlarge"
+            android:layout_marginTop="@dimen/dimen_border_size_normal" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_share_and_get" />
+
+            <TextView
+                android:id="@+id/tv_share_and_get"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_border_size_xlarge"
+                android:layout_marginRight="@dimen/dimen_border_size_xlarge"
+                android:layout_marginTop="@dimen/dimen_border_size_llarge"
+                android:gravity="top"
+                android:paddingLeft="@dimen/dimen_border_size_small"
+                android:paddingRight="@dimen/dimen_border_size_small"
+                android:paddingTop="@dimen/dimen_border_size_small"
+                android:text="离双11还有不到20天，这个时候的你，是否一边把心仪的商品收进购物车，一边摩拳擦掌装备开抢红包呢？25日8:30，一大波天猫红包即将来袭，除了此前公布的微博红包之外，天猫还将联合UC在微博上大把撒钱，另外手机淘宝和天猫无线客户端也将上线“种子红包”。据介绍，今年天猫红包改变了以往天猫官方发放红包的做法，而是让所有的用户都参与到红包的发放和领取中来，打造“全民红包”的狂欢。"
+                android:textColor="@color/moneypocket_grey"
+                android:textSize="@dimen/dimen_font_size_lsmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/dimen_border_size_normal"
+                android:layout_marginTop="@dimen/dimen_border_size_small"
+                android:text="@string/str_money_pocket"
+                android:textColor="@color/moneypocket_pink"
+                android:textSize="@dimen/dimen_font_size_xnormal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlyt_dialog_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dimen_border_size_xlarge"
+            android:layout_marginTop="@dimen/dimen_border_size_xlarge"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/btn_sub_confirm" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/str_shared"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_font_size_xnormal" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include
+        layout="@layout/layout_dialog_share"
+        android:visibility="gone" />
+
+</RelativeLayout>

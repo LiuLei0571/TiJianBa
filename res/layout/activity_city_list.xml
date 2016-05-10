@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/org_background_grey"
+        android:paddingBottom="@dimen/dimen_border_size_xnormal"
+        android:paddingTop="@dimen/dimen_border_size_xnormal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/str_city_list"
+            android:textColor="@color/org_dark_gray"
+            android:textSize="@dimen/dimen_font_size_xnormal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/org_background_grey"
+        android:padding="@dimen/dimen_border_size_xnormal"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/spinnerid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/spinner_background"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/dimen_border_size_small" >
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_border_size_xsmall"
+                android:text="@string/str_search"
+                android:textColor="@color/mall_light_gray"
+                android:textSize="@dimen/dimen_font_size_xsmall" />
+
+            <EditText
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_border_size_small"
+                android:background="@null"
+                android:hint="@string/hint_city"
+                android:singleLine="true"
+                android:textColor="@color/org_gray"
+                android:textSize="@dimen/dimen_font_size_xsmall" >
+            </EditText>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_gray"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/dimen_border_size_lsmall"
+        android:paddingLeft="@dimen/dimen_border_size_normal"
+        android:paddingTop="@dimen/dimen_border_size_lsmall"
+        android:text="@string/str_located_city"
+        android:textSize="@dimen/dimen_font_size_lsmall" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/dimen_border_size_lsmall"
+        android:paddingLeft="@dimen/dimen_border_size_normal"
+        android:paddingTop="@dimen/dimen_border_size_lsmall"
+        android:textColor="@color/city_grey"
+        android:textSize="@dimen/dimen_font_size_lsmall" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_gray"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/dimen_border_size_xnormal"
+        android:paddingLeft="@dimen/dimen_border_size_normal"
+        android:paddingTop="@dimen/dimen_border_size_xnormal"
+        android:text="@string/str_hot_city"
+        android:textSize="@dimen/dimen_font_size_lsmall" />
+
+    <ListView
+        android:id="@+id/lv_city_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="@drawable/seperate"
+        android:paddingLeft="@dimen/dimen_border_size_normal"
+        android:scrollbars="@null" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:background="@drawable/seperate" />
+
+</LinearLayout>

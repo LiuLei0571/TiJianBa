@@ -1,0 +1,248 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="edit_text">
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/dimen_font_size_xnormal</item>
+        <item name="android:textColor">@color/edt_grey</item>
+    </style>
+
+    <style name="textView_people">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginTop">@dimen/dimen_border_size_xsmall</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_border_size_xsmall</item>
+        <item name="android:drawablePadding">@dimen/dimen_border_size_xsmall</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/mall_light_gray</item>
+        <item name="android:textSize">@dimen/dimen_font_size_lsmall</item>
+    </style>
+
+    <style name="textView_recommend">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_border_size_xsmall</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/mall_gray</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/dimen_font_size_lsmall</item>
+    </style>
+
+    <style name="textView_rem_with_icon" parent="textView_recommend">
+        <item name="android:drawableLeft">@drawable/ic_hand</item>
+        <item name="android:textColor">@color/mall_light_gray</item>
+        <item name="android:textSize">@dimen/dimen_font_size_small</item>
+    </style>
+
+    <style name="imageView_rem">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="textView_advice_list">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/dimen_border_size_small</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:drawableLeft">@drawable/ic_list</item>
+        <item name="android:textSize">@dimen/dimen_font_size_small</item>
+    </style>
+
+    <style name="textView_menu_price">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/org_light_gray</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/dimen_font_size_xsmall</item>
+    </style>
+
+    <style name="textView_menu_repay">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/dimen_font_size_xsmall</item>
+        <item name="android:background">@color/my_green</item>
+    </style>
+
+    <style name="textView_repayed">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/dimen_font_size_lsmall</item>
+        <item name="android:background">@color/closing_red</item>
+    </style>
+
+    <style name="radiobutton_list">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/dimen_font_size_lsmall</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawableRight">@drawable/exhibition_arrow</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/mall_light_gray</item>
+        <item name="android:background">@drawable/list_unselected</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="textview_order_list">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/dimen_font_size_small</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/mall_light_gray</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="CalendarCard"></style>
+
+    <style name="CalendarCard.Root">
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@color/dark_white</item>
+    </style>
+
+    <style name="CalendarCard.Day">
+        <item name="android:paddingBottom">@dimen/dimen_border_size_xsmall</item>
+        <item name="android:paddingTop">@dimen/dimen_border_size_xsmall</item>
+        <item name="android:textSize">@dimen/dimen_font_size_xnormal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CalendarCard.Title">
+        <item name="android:textSize">@dimen/dimen_font_size_xnormal</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="CalendarCard.Cell">
+        <item name="android:textSize">@dimen/dimen_font_size_small</item>
+    </style>
+
+    <style name="edittext_subscribe">
+        <item name="android:layout_height">@dimen/dimen_border_size_llarge</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/dimen_font_size_xnormal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/org_light_gray</item>
+        <item name="android:background">@null</item>
+        <item name="android:ems">10</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_border_size_normal</item>
+        <item name="android:textColorHint">@color/org_detail_grey</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textview_subscribe">
+        <item name="android:layout_height">@dimen/dimen_border_size_llarge</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/dimen_font_size_xnormal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/sub_font_grey</item>
+    </style>
+<style name="textview_subscribe_orange">
+        <item name="android:layout_height">@dimen/dimen_border_size_llarge</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/dimen_font_size_small</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/org_orange</item>
+    </style>
+    <style name="radioButton_subscribe_red">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/dimen_font_size_xnormal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_border_size_large</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/org_detail_grey</item>
+        <item name="android:background">@drawable/chb_red</item>
+    </style>
+<style name="textview_subscribe_black">
+        <item name="android:layout_height">@dimen/dimen_border_size_llarge</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/dimen_font_size_small</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="radioButton_subscribe_green">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/dimen_font_size_xnormal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:checked">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/add_contact_green</item>
+        <item name="android:background">@drawable/chb_green</item>
+    </style>
+ <style name="radioButton_male">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+         <item name="android:textSize">@dimen/dimen_font_size_xnormal</item>
+        <item name="android:checked">true</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/org_detail_grey</item>
+        <item name="android:background">@drawable/chb_male</item>
+    </style>
+
+    <style name="radioButton_married">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:checked">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+         <item name="android:textSize">@dimen/dimen_font_size_xnormal</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/add_contact_green</item>
+        <item name="android:background">@drawable/chb_married</item>
+    </style>
+    <style name="radioButton_report">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/dimen_font_size_xnormal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/edt_grey</item>
+        <item name="android:background">@drawable/sub_view_selector</item>
+    </style>
+
+    <style name="edittext_health" parent="edittext_subscribe">
+        <item name="android:inputType">numberSigned|numberDecimal</item>
+        <item name="android:text"></item>
+    </style>
+
+    <style name="dialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:textSize">@dimen/dimen_font_size_normal</item>
+    </style>
+    <style name="giftTransparent">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    
+</resources>

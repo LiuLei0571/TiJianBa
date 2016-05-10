@@ -1,0 +1,233 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/org_background_grey"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_border_size_xnormal"
+        android:paddingTop="@dimen/dimen_border_size_xnormal"
+        android:text="@string/main_navigation_subscribe"
+        android:textColor="@color/mall_dark_gray"
+        android:textSize="@dimen/dimen_font_size_xnormal" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/detail_background_grey"
+        android:padding="@dimen/dimen_border_size_xnormal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_sub"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edt_card_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_border_size_normal"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/ic_card_num"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_card_num"
+                android:inputType="number"
+                android:textColor="@color/edt_grey"
+                android:textSize="@dimen/dimen_font_size_xnormal" />
+
+            <EditText
+                android:id="@+id/edt_card_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_border_size_normal"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/ic_card_pwd"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_card_pwd"
+                android:inputType="textPassword"
+                android:textSize="@dimen/dimen_font_size_xnormal" >
+            </EditText>
+
+            <RelativeLayout
+                android:id="@+id/rl_sub_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_border_size_xlarge" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/btn_sub_now" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/str_sub_now"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/sub_tab_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_border_size_small"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/tab_my_menu"
+            style="@style/radioButton_report"
+            android:checked="true"
+            android:text="@string/str_my_menu" />
+
+        <RadioButton
+            android:id="@+id/tab_my_sub"
+            style="@style/radioButton_report"
+            android:text="@string/str_sub_record" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lv_my_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:paddingLeft="@dimen/dimen_border_size_xnormal"
+            android:paddingRight="@dimen/dimen_border_size_xnormal"
+            android:scrollbars="@null"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/lv_sub_record"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:scrollbars="@null"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_no_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/str_no_record"
+            android:textColor="@color/sub_dark_green"
+            android:textSize="@dimen/dimen_font_size_xnormal"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/ll_no_login"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_no_login"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_border_size_xlarge"
+                android:src="@drawable/ic_no_login" />
+
+            <TextView
+                android:id="@+id/tv_no_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/str_no_login"
+                android:textColor="@color/sub_dark_green"
+                android:textSize="@dimen/dimen_font_size_xnormal" />
+
+            <RelativeLayout
+                android:id="@+id/rl_go_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dimen_border_size_xlarge" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/btn_sub_green" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/str_login_now"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_no_buy"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/background_sub_view"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_border_size_xlarge"
+                android:src="@drawable/ic_no_buy" />
+
+            <TextView
+                android:id="@+id/tv_no_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/str_no_buy"
+                android:textColor="@color/sub_dark_green"
+                android:textSize="@dimen/dimen_font_size_xnormal" />
+
+            <RelativeLayout
+                android:id="@+id/rl_go_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dimen_border_size_xlarge" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/btn_sub_green" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/str_choice_now"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

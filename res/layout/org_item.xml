@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:paddingBottom="@dimen/dimen_border_size_lsmall"
+    android:paddingLeft="@dimen/dimen_border_size_normal"
+    android:paddingRight="@dimen/dimen_border_size_normal"
+    android:paddingTop="@dimen/dimen_border_size_lsmall" >
+
+    <ImageView
+        android:id="@+id/iv_org"
+        android:layout_width="@dimen/dimen_image_width"
+        android:layout_height="@dimen/dimen_image_height"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_toRightOf="@id/iv_org" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_org_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_toRightOf="@id/iv_org"
+        android:text="杭州爱康国宾西溪分院"
+        android:textColor="@color/org_dark_gray"
+        android:textSize="@dimen/dimen_font_size_small" />
+
+    <TextView
+        android:id="@+id/tv_org_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_org_name"
+        android:layout_below="@id/tv_org_name"
+        android:layout_marginTop="@dimen/dimen_border_size_small"
+        android:text="专业体检中心"
+        android:textColor="@color/org_light_gray"
+        android:textSize="@dimen/dimen_font_size_xsmall" />
+
+    <TextView
+        android:id="@+id/tv_org_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_org_name"
+        android:layout_below="@id/tv_org_type"
+        android:layout_marginTop="@dimen/dimen_border_size_small"
+        android:text="品牌A"
+        android:textColor="@color/org_light_gray"
+        android:textSize="@dimen/dimen_font_size_xsmall" />
+
+    <TextView
+        android:id="@+id/tv_org_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_org"
+        android:layout_alignLeft="@id/tv_org_type"
+        android:layout_toRightOf="@id/iv_find_location"
+        android:drawableLeft="@drawable/find_location"
+        android:drawablePadding="@dimen/dimen_border_size_xsmall"
+        android:gravity="bottom"
+        android:singleLine="true"
+        android:text="文二西路718"
+        android:textColor="@color/org_holo_gray"
+        android:textSize="@dimen/dimen_font_size_small" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_org_address"
+        android:layout_marginTop="@dimen/dimen_border_size_xnormal"
+        android:background="@drawable/seperate" />
+
+</RelativeLayout>

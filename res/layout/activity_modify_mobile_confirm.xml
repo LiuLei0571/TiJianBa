@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_green_blue" >
+
+    <TextView
+        android:id="@+id/tv_modify_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/org_background_grey"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_border_size_xnormal"
+        android:paddingTop="@dimen/dimen_border_size_xnormal"
+        android:text="@string/str_title_modify_mobile"
+        android:textColor="@color/org_dark_gray"
+        android:textSize="@dimen/dimen_font_size_xnormal" />
+
+    <ImageView
+        android:id="@+id/iv_modify_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_modify_title"
+        android:background="@drawable/line_wave" />
+
+    <ImageView
+        android:id="@+id/iv_confirm_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_modify_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_border_size_normal"
+        android:layout_marginTop="@dimen/dimen_border_size_normal"
+        android:background="@drawable/ic_modify_step3" >
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/ll_confirm_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_confirm_progress"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bacground_login"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dimen_border_size_xnormal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_border_size_normal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/background_icon"
+                android:src="@drawable/ic_modify_mobile_org" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_border_size_xnormal"
+                android:background="@drawable/background_icon"
+                android:src="@drawable/ic_modify_code" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="15"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/et_confirm_mobile"
+                style="@style/edit_text"
+                android:layout_width="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:background="@drawable/background_icon"
+                android:gravity="center_vertical"
+                android:inputType="phone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginRight="@dimen/dimen_border_size_small"
+                android:layout_marginTop="@dimen/dimen_border_size_xnormal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/et_confirm_code"
+                    style="@style/edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_icon"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_verify_code"
+                    android:inputType="number"
+                    android:textColor="@color/mall_light_gray" />
+
+                <TextView
+                    android:id="@+id/tv_confirm_send_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_border_size_small"
+                    android:background="@drawable/ic_modify_send_green"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/str_send_verify_code"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_modify_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_confirm_body"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_border_size_llarge" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/btn_login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/str_finish"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_font_size_xnormal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_confirm_success"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_modify_complete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_success"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_border_size_normal"
+            android:text="@string/str_modify_success"
+            android:textColor="@color/sub_green"
+            android:textSize="@dimen/dimen_font_size_llarge" />
+    </RelativeLayout>
+
+</RelativeLayout>

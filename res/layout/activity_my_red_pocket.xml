@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/detail_background_grey"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/org_background_grey"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/dimen_border_size_xnormal"
+        android:paddingTop="@dimen/dimen_border_size_xnormal"
+        android:text="@string/my_redpocket"
+        android:textColor="@color/org_dark_gray"
+        android:textSize="@dimen/dimen_font_size_xnormal" />
+
+    <RadioGroup
+         android:id="@+id/rg_myred_pocket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_myred_get"
+            style="@style/radioButton_report"
+            android:checked="true"
+            android:text="@string/myred_get" />
+
+        <RadioButton
+            android:id="@+id/rb_myred_use"
+            style="@style/radioButton_report"
+            android:text="@string/myred_use"
+            android:textColor="@color/sub_light_grey" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/myred_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

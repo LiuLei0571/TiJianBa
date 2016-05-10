@@ -1,0 +1,227 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/org_background_grey"
+    tools:context="com.hengtiansoft.tijianba.activity.AddAnalysisReportActivity" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_border_size_xnormal"
+        android:paddingTop="@dimen/dimen_border_size_xnormal"
+        android:text="@string/add_contact"
+        android:textColor="@color/org_dark_gray"
+        android:textSize="@dimen/dimen_font_size_xnormal" />
+
+    <ImageView
+        android:id="@+id/iv_sperate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:background="@drawable/seperate" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_sperate" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_available_bonus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_border_size_xlarge"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_available_bonus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/add_contact_item"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+
+                <CheckBox
+                    android:id="@+id/ck_chb_bonus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/checkbox_cart"
+                    android:checked="false" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimen_border_size_small"
+                android:paddingLeft="@dimen/dimen_border_size_xlarge"
+                android:paddingTop="@dimen/dimen_border_size_small"
+                android:text="@string/str_required_item"
+                android:textColor="@color/add_contact_item"
+                android:textSize="@dimen/dimen_font_size_xnormal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/dimen_border_size_xlarge" >
+
+                <TextView
+                    android:id="@+id/tv_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/str_contact"
+                    android:textColor="@color/add_contact_green"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+
+                <EditText
+                    android:id="@+id/et_contact_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tv_contact"
+                    android:layout_marginLeft="@dimen/dimen_border_size_large"
+                    android:layout_toRightOf="@id/tv_contact"
+                    android:background="@null"
+                    android:ems="5"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+
+                <ImageView
+                    android:id="@+id/iv_seperate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_contact"
+                    android:layout_marginTop="@dimen/dimen_border_size_normal"
+                    android:background="@drawable/seperate" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_seperate"
+                    android:layout_marginTop="@dimen/dimen_border_size_normal"
+                    android:text="@string/str_contact_phone"
+                    android:textColor="@color/add_contact_green"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+
+                <EditText
+                    android:id="@+id/et_contact_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tv_phone"
+                    android:layout_marginLeft="@dimen/dimen_border_size_normal"
+                    android:layout_toRightOf="@id/tv_phone"
+                    android:background="@null"
+                    android:ems="11"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimen_border_size_small"
+                android:paddingLeft="@dimen/dimen_border_size_xlarge"
+                android:paddingTop="@dimen/dimen_border_size_small"
+                android:text="@string/str_picked_item"
+                android:textColor="@color/add_contact_item"
+                android:textSize="@dimen/dimen_font_size_xnormal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/dimen_border_size_xlarge" >
+
+                <TextView
+                    android:id="@+id/tv_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_contact_mail"
+                    android:textColor="@color/add_contact_green"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+
+                <EditText
+                    android:id="@+id/et_contact_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tv_mail"
+                    android:layout_marginLeft="@dimen/dimen_border_size_llarge"
+                    android:layout_toRightOf="@id/tv_mail"
+                    android:background="@null"
+                    android:ems="50"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+
+                <ImageView
+                    android:id="@+id/iv_seperate_picked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/et_contact_mail"
+                    android:layout_marginTop="@dimen/dimen_border_size_normal"
+                    android:background="@drawable/seperate" />
+
+                <TextView
+                    android:id="@+id/tv_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_seperate_picked"
+                    android:layout_marginTop="@dimen/dimen_border_size_normal"
+                    android:text="@string/str_contact_remark"
+                    android:textColor="@color/add_contact_green"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+
+                <EditText
+                    android:id="@+id/et_contact_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tv_remark"
+                    android:layout_marginLeft="@dimen/dimen_border_size_llarge"
+                    android:layout_toRightOf="@id/tv_remark"
+                    android:background="@null"
+                    android:ems="50"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_contact_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/dimen_border_size_xnormal"
+                android:paddingTop="@dimen/dimen_border_size_xnormal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_sub_confirm" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/btn_add_contact"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

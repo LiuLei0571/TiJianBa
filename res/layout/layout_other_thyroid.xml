@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/other_thyroid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/textview_subscribe"
+            android:layout_gravity="center_vertical|left"
+            android:paddingLeft="@dimen/dimen_border_size_normal"
+            android:text="@string/tv_analysis_report_thyroid" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:paddingRight="@dimen/dimen_border_size_normal"
+            android:src="@drawable/exhibition_arrow_big" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/other_thy_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/view_blank_thy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_border_size_small"
+            android:background="@color/background_gray"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_border_size_normal"
+            android:paddingRight="@dimen/dimen_border_size_normal" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/textview_subscribe"
+                    android:layout_gravity="center_vertical|left"
+                    android:text="@string/other_tsh" />
+
+                <EditText
+                    android:id="@+id/other_tsh"
+                    style="@style/edittext_health"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/blood_routine_hint" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

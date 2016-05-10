@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_rem_no"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_rem_item" >
+
+    <ImageView
+        android:id="@+id/iv_rem"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_hot_menu_height"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_rem_name"
+        style="@style/textView_recommend"
+        android:layout_alignLeft="@id/iv_rem"
+        android:layout_below="@id/iv_rem" />
+
+    <TextView
+        android:id="@+id/tv_rem_character"
+        style="@style/textView_rem_with_icon"
+        android:layout_alignLeft="@id/iv_rem"
+        android:layout_below="@id/tv_rem_name" />
+
+</RelativeLayout>

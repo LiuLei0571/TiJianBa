@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/holo_black" >
+
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/item_popupwindows_camera"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_border_size_large"
+                android:background="@color/white"
+                android:textSize="@dimen/dimen_font_size_xnormal"
+                   android:textColor="@color/dark_gray"
+                android:text="拍照" />
+
+           <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/seperate"
+             />
+
+            <Button
+                android:id="@+id/item_popupwindows_Photo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_border_size_large"
+                android:background="@color/white"
+                android:textSize="@dimen/dimen_font_size_xnormal"
+                      android:textColor="@color/dark_gray"
+                android:text="从相册中选取" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_border_size_xnormal"
+            android:background="#f3f3f3" />
+
+        <Button
+            android:id="@+id/item_popupwindows_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_border_size_large"
+            android:background="@color/white"
+            android:textSize="@dimen/dimen_font_size_xnormal"
+            android:textColor="@color/dark_gray"
+            android:text="@string/str_cancel" />
+    </LinearLayout>
+
+</RelativeLayout>

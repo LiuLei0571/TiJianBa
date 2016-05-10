@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/main_tab_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingTop="2.0dip" >
+
+        <RadioButton
+            android:id="@+id/main_tab_my_health"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:button="@drawable/health_selector"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/main_tab_mall"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:button="@drawable/mall_selector"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/main_tab_subscribe"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:button="@drawable/subscribe_selector"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/main_tab_find"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:button="@drawable/find_selector"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/main_tab_more"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:button="@drawable/more_selector"
+            android:checked="false" />
+    </RadioGroup>
+
+    <com.hengtiansoft.tijianba.widget.CustomViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_tab_group" />
+
+</RelativeLayout>

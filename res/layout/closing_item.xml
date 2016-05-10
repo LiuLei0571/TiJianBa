@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingBottom="@dimen/dimen_border_size_lsmall"
+    android:paddingTop="@dimen/dimen_border_size_lsmall" >
+
+    <ImageView
+        android:id="@+id/iv_menu"
+        android:layout_width="@dimen/dimen_image_width"
+        android:layout_height="@dimen/dimen_image_height"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_menu_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/org_orange"
+        android:textSize="@dimen/dimen_font_size_xnormal" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/dimen_border_size_small"
+        android:layout_toLeftOf="@id/tv_menu_price"
+        android:layout_toRightOf="@id/iv_menu"
+        android:maxLines="2"
+        android:textColor="@color/edt_grey"
+        android:textSize="@dimen/dimen_font_size_xnormal" />
+
+    <LinearLayout
+        android:id="@+id/ll_edit_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_toLeftOf="@id/tv_menu_price"
+        android:layout_toRightOf="@id/iv_menu"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <CheckBox
+            android:id="@+id/chb_cart_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox_num_del"
+            android:checked="false" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_cart_num" />
+
+            <TextView
+                android:id="@+id/tv_edit_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="1"
+                android:textColor="@color/edt_grey"
+                android:textSize="@dimen/dimen_font_size_normal" />
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/chb_cart_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox_num_add"
+            android:checked="false" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_cart_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_menu"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/edt_grey"
+        android:textSize="@dimen/dimen_font_size_lsmall" />
+
+    <TextView
+        android:id="@+id/tv_menu_price_market"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_menu_price"
+        android:textColor="@color/del_grey"
+        android:textSize="@dimen/dimen_font_size_small" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_name"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="@dimen/dimen_border_size_small"
+        android:textColor="@color/closing_grey"
+        android:textSize="@dimen/dimen_font_size_small" />
+
+</RelativeLayout>

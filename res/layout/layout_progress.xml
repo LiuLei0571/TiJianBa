@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/rlyt_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/indicator_corner_radius"
+            android:max="100"
+            android:layout_centerInParent="true"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_color" />
+        <ImageView
+       android:id="@+id/img_pro_logo"
+       android:layout_width="30dp"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:background="@drawable/ic_progress" />
+    </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlyt_progress"
+            android:layout_marginTop="@dimen/dimen_border_size_xxsmall"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_font_size_small" />
+   <TextView
+         android:id="@+id/tv_mess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlyt_progress"
+            android:layout_marginTop="@dimen/dimen_border_size_xxsmall"
+            android:textSize="@dimen/dimen_font_size_large" 
+            />
+
+   
+
+</RelativeLayout>

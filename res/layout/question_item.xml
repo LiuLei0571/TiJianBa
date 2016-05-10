@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="@dimen/dimen_border_size_normal" >
+
+    <ImageView
+        android:id="@+id/iv_question_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_question_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/iv_question_title"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_que_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:maxLines="2"
+            android:text="1.正常人的心跳范围是？"
+            android:textColor="@color/edt_grey"
+            android:textSize="@dimen/dimen_font_size_lsmall" />
+
+        <RadioGroup
+            android:id="@+id/rg_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/rb_option_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_border_size_xnormal"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/radio_button"
+                android:drawablePadding="@dimen/dimen_border_size_xsmall"
+                android:text="A.27"
+                android:textColor="@color/cart_grey"
+                android:textSize="@dimen/dimen_font_size_small" />
+
+            <RadioButton
+                android:id="@+id/rb_option_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_border_size_small"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/radio_button"
+                android:drawablePadding="@dimen/dimen_border_size_xsmall"
+                android:text="B.27"
+                android:textColor="@color/cart_grey"
+                android:textSize="@dimen/dimen_font_size_small" />
+
+            <RadioButton
+                android:id="@+id/rb_option_C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_border_size_small"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/radio_button"
+                android:drawablePadding="@dimen/dimen_border_size_xsmall"
+                android:text="C.27"
+                android:textColor="@color/cart_grey"
+                android:textSize="@dimen/dimen_font_size_small" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

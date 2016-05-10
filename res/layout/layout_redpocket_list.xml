@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/detail_background_grey"
+    android:paddingTop="@dimen/indicator_right_padding" >
+
+    <RelativeLayout
+        android:id="@+id/rlyt_redpocket_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/redpocket_get_background" >
+
+        <TextView
+            android:id="@+id/tv_list_red_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/dimen_border_size_xnormal"
+            android:text="@string/str_bonus"
+            android:textSize="@dimen/dimen_font_size_lsmall" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_list_red_num"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_border_size_xnormal" >
+
+            <TextView
+                android:id="@+id/tv_list_red_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_font_size_xsmall" />
+
+            <TextView
+                android:id="@+id/tv_list_red_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_border_size_small"
+                android:textColor="@color/cart_grey"
+                android:textSize="@dimen/dimen_font_size_xsmall" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_list_red_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/dimen_border_size_xnormal"
+            android:paddingRight="@dimen/dimen_border_size_xnormal"
+            android:paddingTop="@dimen/dimen_border_size_xnormal"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_font_size_large" />
+    </RelativeLayout>
+
+</RelativeLayout>

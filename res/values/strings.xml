@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- sjt -->
+    <string name="gogogo">走吧走吧</string>
+    <string name="gobonus">快去领奖吧~</string>
+    <string name="kilometer">公里</string>
+    <string name="calorie">大卡</string>
+    <string name="rank">排行榜</string>
+    <string name="gap">距上一名还有666步</string>
+    <!-- sjt -->
+    
+    <!-- dm -->
+    <string name="str_get_time">领取时间为：</string>
+    <string name="str_giftlist">礼品单</string>
+    <string name="str_week_giftlist">本周礼品单</string>
+    <string name="str_gift_title">礼品详情</string>
+    <string name="str_gift_rule">兑换规则</string>
+    <string name="str_detail">商品详情</string>
+    <!--  -->
+    <string name="app_name">绿柠檬</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="umeng_share">Share</string>
+    <string name="main_navigation_mall">健康商城</string>
+    <string name="main_navigation_subscribe">体检预约</string>
+    <string name="main_navigation_find">发现</string>
+    <string name="main_navigation_my_health">我的健康</string>
+    <string name="main_navigation_more">更多</string>
+    <string name="my_health_me">我</string>
+    <string name="my_health_report">体检报告</string>
+    <string name="my_health_bill">身体小账本</string>
+    <string name="my_health_last_test">最近一次体检报告</string>
+    <string name="my_health_last_input">最近一次数据录入</string>
+    <string name="titel_login">登录</string>
+    <string name="titel_register">注册</string>
+    <string name="str_confirm_register">确认注册</string>
+    <string name="hint_username">手机号</string>
+    <string name="hint_password">密码</string>
+    <string name="hint_newpwd">输入新密码</string>
+    <string name="hint_confirm_newpwd">确认新密码</string>
+    <string name="hint_oldpwd">输入旧密码</string>
+    <string name="titel_change_pwd">修改密码</string>
+    <string name="hint_set_password">设置密码</string>
+    <string name="hint_confirm_password">确认密码</string>
+    <string name="hint_verify_code">输入验证码</string>
+    <string name="str_remember_pwd">记住密码</string>
+    <string name="str_register">免费注册</string>
+    <string name="str_find_pwd">找回密码</string>
+    <string name="str_account">已有账号</string>
+    <string name="str_agreed">我同意</string>
+    <string name="str_agreement">《体检用户协议》</string>
+    <string name="str_get_verify_code">获取验证码</string>
+    <string name="str_get_verify_code_again">重新获取</string>
+    <string name="err_msg_user_name">手机号不能为空</string>
+    <string name="err_msg_user_name_exit">手机号已注册</string>
+    <string name="err_msg_password"> 密码不能为空</string>
+    <string name="err_msg_confirm_pwd">密码不一致</string>
+    <string name="err_msg_newpassword">新密码不能为空</string>
+    <string name="err_msg_oldpassword">旧密码不能为空</string>
+    <string name="err_msg_confirmpwd">确认密码不能为空</string>
+    <string name="err_confirm_password">确认密码和输入密码不一致</string>
+    <string name="err_msg_verify_code">验证码不能为空</string>
+    <string name="str_wait">请稍候 &#8230;</string>
+    <string name="str_report_add">报告上传中</string>
+    <string name="str_hot_menu">热销套餐</string>
+    <string name="str_recomment_organization">推荐机构</string>
+    <string name="str_market_price">市场价</string>
+    <string name="str_family_price">家属价</string>
+    <string name="str_plant_price">平台价</string>
+    <string name="str_all">共</string>
+    <string name="str_num">家体检机构提供服务</string>
+    <string name="str_repay">柠檬返现</string>
+    <string name="str_yuan">元</string>
+    <string name="str_qi">起</string>
+    <string name="str_menu">套餐</string>
+    <string name="str_org">机构</string>
+    <string name="hint_menu">请输入套餐名称</string>
+    <string name="hint_org">请输入机构名称</string>
+    <string name="str_org_brand">机构品牌</string>
+    <string name="str_org_type">机构类型</string>
+    <string name="str_rem">柠檬推荐</string>
+    <string name="str_menu_type">套餐类型</string>
+    <string name="str_menu_all">综合排序</string>
+    <string name="str_order_price_down">价格从高到低</string>
+    <string name="str_order_price_up">价格从低到高</string>
+    <string name="str_order_num">销量排序</string>
+    <string name="str_order_time">最新发布</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新…</string>
+    <string name="pull_to_refresh_release_label">放开以刷新…</string>
+    <string name="pull_to_refresh_refreshing_label">正在载入…</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <string name="str_search">搜索</string>
+    <string name="hint_city">请输入城市名称</string>
+    <string name="str_located_city">定位城市</string>
+    <string name="str_hot_city">城市列表</string>
+    <string name="str_org_type_pro">专业体检机构</string>
+    <string name="str_org_type_pub">公立医院</string>
+    <string name="str_org_type_re">疗养院</string>
+    <string name="str_family">家属专区</string>
+    <string name="str_plat">平台套餐</string>
+    <string name="str_family_more">查看更多家属专区体检套餐</string>
+    <string name="str_plat_more">查看更多平台体检套餐</string>
+    <string name="str_menu_detail">套餐详情</string>
+    <string name="str_menu_suit_people">适用人群</string>
+    <string name="str_menu_suit_gender">适用性别</string>
+    <string name="str_menu_content">套餐内容</string>
+    <string name="str_menu_org">适用机构</string>
+    <string name="str_menu_sold">已售</string>
+    <string name="str_menu_jia">家</string>
+    <string name="str_menu_custom">客户须知</string>
+    <string name="str_menu_view">查看图文详情</string>
+    <string name="str_add_cart">加入购物车</string>
+    <string name="str_buy_now">立即购买</string>
+    <string name="str_org_detail">机构详情</string>
+    <string name="str_org_ahead">提前</string>
+    <string name="str_org_tian">天预约</string>
+    <string name="str_org_content">机构内容</string>
+    <string name="str_org_view">点击查看详情</string>
+    <string name="str_org_map">查看地图</string>
+    <string name="str_org_menu">体检套餐</string>
+    <string name="str_ge">个</string>
+    <string name="str_org_time">机构工作时间</string>
+    <string name="str_org_add">地址</string>
+    <string name="str_org_time_reg">登记时间</string>
+    <string name="str_more_org">查看更多适用机构</string>
+    <string name="str_more_menu">查看更多体检套餐</string>
+    <string name="str_org_brief">简介</string>
+    <string name="str_cart">购物车</string>
+    <string name="str_clear_now">立即结算</string>
+    <string name="str_total">总计：</string>
+    <string name="str_cart_zhong">种套餐</string>
+    <string name="str_edit">编辑</string>
+    <string name="str_finish">完成</string>
+    <string name="str_money">¥</string>
+    <string name="str_buy_num">购买数量</string>
+    <string name="str_confirm">确认</string>
+    <string name="str_order_id">订单号：</string>
+    <string name="str_should_pay">应付金额：</string>
+    <string name="str_go_pay">去付款</string>
+    <string name="str_closing">结算</string>
+    <string name="str_closing_ge">个套餐</string>
+    <string name="str_summation">合计：</string>
+    <string name="str_repayed">已返现</string>
+    <string name="str_start_subscribe">开始预约</string>
+    <string name="str_alert">提醒：请不要将预约卡号及密码提供给他人，谨防诈骗！</string>
+    <string name="str_send">预约卡号及密码已发送至您的手机号，</string>
+    <string name="str_check">请注意查收！</string>
+    <string name="hint_card_num">请输入您的预约卡号</string>
+    <string name="hint_card_pwd">请输入您的预约密码</string>
+    <string name="str_sub_now">立即预约！</string>
+    <string name="str_go_sub">去预约</string>
+    <string name="str_no_login">亲，您还没有登录哦~</string>
+    <string name="str_no_record">无记录</string>
+    <string name="str_no_buy">亲，您还没有购买哦~</string>
+    <string name="str_login_now">立即登录！</string>
+    <string name="str_choice_now">立即去挑选！</string>
+    <string name="str_subscribe">预约</string>
+    <string name="str_step_one">完善预约信息</string>
+    <string name="str_step_two">选择体检机构</string>
+    <string name="str_step_three">确认您预约的套餐</string>
+    <string name="str_step_four">选择体检时间</string>
+    <string name="str_step_five">确认预约信息</string>
+    <string name="str_one">01</string>
+    <string name="str_two">02</string>
+    <string name="str_three">03</string>
+    <string name="str_four">04</string>
+    <string name="str_five">05</string>
+    <string name="str_tijian_person">体检人信息</string>
+    <string name="str_contact_person">联系人信息</string>
+    <string name="str_order_detail">订单详情</string>
+    <string name="str_order_pay">付款</string>
+    <string name="str_person">联系人</string>
+    <string name="str_order_info">订单信息</string>
+    <string name="str_my_menu">我的套餐</string>
+    <string name="str_sub_record">预约记录</string>
+    <string name="err_msg_card_num">预约号不能为空</string>
+    <string name="err_msg_card_pwd">预约密码不能为空</string>
+    <string name="str_tester_name">体检人</string>
+    <string name="str_tester_gender">性别</string>
+    <string name="str_tester_married">是否已婚</string>
+    <string name="str_tester_id">身份证号</string>
+    <string name="str_tester_mobile">手机号</string>
+    <string name="str_contact">联系人</string>
+    <string name="str_address">邮寄地址</string>
+    <string name="str_zip_code">邮编</string>
+    <string name="hint_real_name">真实姓名</string>
+    <string name="hint_real_mobile">真实手机号码</string>
+    <string name="hint_real_id">当天凭本人身份证验证身份</string>
+    <string name="hint_real_add">请确保该地址能收到体检报告</string>
+    <string name="hint_real_code">真实邮编</string>
+    <string name="confirm_an_order">确认订单</string>
+    <string name="ningmingbi_instroduction">柠檬币说明</string>
+    <string name="immediate_exchange">立即兑换</string>
+    <string name="market_price">市场价</string>
+    <string name="to_get">去获得</string>
+    <string name="generate_instruction">生成说明</string>
+    <string name="product_instruction">消费说明</string>
+    <string name="reset_instruction">清零说明</string>
+    <string name="health_foundation">健康基金</string>
+    <string name="mobile_num">手机号码</string>
+    <string name="str_both">都可</string>
+    <string name="str_female">女</string>
+    <string name="str_male">男</string>
+    <string name="str_married">已婚</string>
+    <string name="str_not_married">未婚</string>
+    <string name="str_sub_menu">预约套餐</string>
+    <string name="str_tester_contact">体检人/联系人</string>
+    <string name="str_sub_org_time">体检机构/预约时间</string>
+    <string name="str_sub_org">体检机构</string>
+    <string name="str_sub_time">预约时间</string>
+    <string name="str_sub_report">上传体检报告</string>
+    <string name="str_sub_done">预约完成</string>
+    <string name="str_sub_full">已满</string>
+    <string name="str_suit_time">适用时间</string>
+    <string name="str_month">月</string>
+    <string name="str_basic_data">基本生理数据</string>
+    <string name="str_basic_age">年龄:</string>
+    <string name="str_basic_gender">性别:</string>
+    <string name="str_basic_height">身高</string>
+    <string name="str_basic_weight">体重</string>
+    <string name="str_basic_bmi">体重指标BMI</string>
+    <string name="str_basic_sbp">收缩压</string>
+    <string name="str_basic_dbp">舒张压</string>
+    <string name="str_basic_rate">心率</string>
+    <string name="str_unit">单位</string>
+    <string name="hint_basic_age">请输入周岁年龄</string>
+    <string name="hint_basic_real">请输入真实数据</string>
+    <string name="hint_basic_bmi">自动计算</string>
+    <string name="blood_routine_title">血常规/血生化</string>
+    <string name="blood_routine_red_cell">红细胞</string>
+    <string name="blood_routine_hemoglobin">血红蛋白</string>
+    <string name="blood_routine_white_cell">白细胞</string>
+    <string name="blood_routine_neutrophil">中性粒细胞</string>
+    <string name="blood_routine_eosnophils">嗜酸性粒细胞</string>
+    <string name="blood_routine_basophilic">嗜碱性粒细胞</string>
+    <string name="blood_routine_leukomonocyte">淋巴细胞</string>
+    <string name="blood_routine_monocyte">单核细胞</string>
+    <string name="blood_routine_bloodplatelet">血小板</string>
+    <string name="blood_routine_hint">请输入真实数据</string>
+    <string name="blood_routine_alt">丙氨酸氨基转移酶</string>
+    <string name="blood_routine_scr">血肌酐</string>
+    <string name="blood_routine_bun">尿素氮</string>
+    <string name="blood_routine_glu">血糖</string>
+    <string name="blood_routine_tg">甘油三脂</string>
+    <string name="blood_routine_tc">总胆固醇</string>
+    <string name="blood_routine_stp">总蛋白</string>
+    <string name="blood_routine_alb">白蛋白</string>
+    <string name="blood_routine_glb">球蛋白</string>
+    <string name="blood_routine_ua">尿酸</string>
+    <string name="other_title">其他</string>
+    <string name="other_afp">甲胎蛋白</string>
+    <string name="other_cea">癌胚抗原</string>
+    <string name="other_igG">免疫球蛋白G</string>
+    <string name="other_igA">免疫球蛋白A</string>
+    <string name="other_igM">免疫球蛋白M</string>
+    <string name="other_igD">免疫球蛋白D</string>
+    <string name="other_igE">免疫球蛋白E</string>
+    <string name="other_igT">免疫球蛋白T</string>
+    <string name="other_rf">风湿免疫</string>
+    <string name="other_tsh">促甲状腺激素</string>
+    <string name="str_general_title">大小便常规</string>
+    <string name="str_general_pro">尿蛋白</string>
+    <string name="str_negative">阴性</string>
+    <string name="str_positive">阳性</string>
+    <string name="str_general_sg">比重</string>
+    <string name="str_general_ph">酸碱度</string>
+    <string name="str_general_klg">尿管型</string>
+    <string name="str_general_glu">尿葡萄糖</string>
+    <string name="str_general_ket">酮体</string>
+    <string name="str_general_rbc">尿红细胞</string>
+    <string name="str_general_wbc">尿白细胞</string>
+    <string name="str_general_fobt">大便隐血</string>
+    <string name="str_report_create_time">创建时间</string>
+    <string name="str_booklet_add">添加</string>
+    <string name="str_report_test_time">体检时间</string>
+    <string name="str_report_exam_time">化验时间</string>
+    <string name="str_report_test">体检报告</string>
+    <string name="str_report_exam">化验报告</string>
+    <string name="str_delete">删除</string>
+    <string name="str_add_report">+ 添加新报告</string>
+    <string name="str_logo">头像</string>
+    <string name="str_nicheng">昵称</string>
+    <string name="str_riqi">日期</string>
+    <string name="str_shijian">时间</string>
+    <string name="health_management_add">新增报告</string>
+    <string name="health_management_report_name">报告名称</string>
+    <string name="health_management_organization">体检机构</string>
+    <string name="health_management_time">体检时间</string>
+    <string name="health_management_report_name_hint">如：入职体检/年度体检等</string>
+    <string name="health_management_time_hint">请输入体检时间</string>
+    <string name="health_button_name">上传</string>
+    <string name="str_report_details">报告详情</string>
+    <string name="str_report_result">报告结果</string>
+    <string name="str_abnormal_data">异常数据</string>
+    <string name="str_normal">正常值/范围</string>
+    <string name="str_all_date">所有已记录的数据</string>
+    <string name="add_analysis_report">添加化验报告</string>
+    <string name="analysis_report_name_hint">如：验血报告</string>
+    <string name="analysis_report_organization_hint">如：杭州爱康国宾体检等</string>
+    <string name="analysis_report_title">选择化验项</string>
+    <string name="tv_analysis_report_blood_routine">血常规</string>
+    <string name="tv_analysis_report_blood_biochemistry">血生化</string>
+    <string name="tv_analysis_report_urine_routine">尿常规</string>
+    <string name="tv_analysis_report_stool_routine">大便常规</string>
+    <string name="tv_analysis_report_tumor_marker">肿瘤标志物</string>
+    <string name="tv_analysis_report_immunological_detection">免疫学检测</string>
+    <string name="tv_analysis_report_thyroid">甲状腺指标</string>
+    <string name="str_next_step">下一步</string>
+    <string name="analysis_upload_button_name">上传</string>
+    <string name="title_activity_every_day_sign_in">EveryDaySignInActivity</string>
+    <string name="everyday_signin_title">每日签到</string>
+    <string name="everyday_signin_mulit">×</string>
+    <string name="tv_everyday_signin_first">你已连续签到</string>
+    <string name="tv_everyday_after_signin_second">1</string>
+    <string name="tv_everyday_signin_thrid">天领红包</string>
+    <string name="everyday_signin_mypocket">查看已领红包</string>
+    <string name="every_day_signin_btn_text">签到</string>
+    <string name="every_day_after_signin_btn_text">已签到</string>
+    <string name="title_activity_every_day_after_signin">EveryDayAfterSigninActivity</string>
+    <string name="red_pocket_default_message">天，可领红包</string>
+    <string name="red_pocket">元红包</string>
+    <string name="red_pocket_end">领红包</string>
+    <string name="red_pocket_success_start">恭喜您，获得</string>
+    <string name="str_day">天, 还需</string>
+    <string name="title_interaction">互动应用</string>
+    <string name="str_share_get">分享抢红包</string>
+    <string name="str_question_get">答题抢红包</string>
+    <string name="str_cancel">取消</string>
+    <string name="str_wechat">微信</string>
+    <string name="str_moments">朋友圈</string>
+    <string name="title_question">答题送红包</string>
+    <string name="my_basic_info">基本信息</string>
+    <string name="str_basic_name">姓名</string>
+    <string name="str_birth">出生年月</string>
+    <string name="str_save">保存</string>
+    <string name="str_not_get">暂不领取</string>
+    <string name="str_congratulation">恭喜您答对题目</string>
+    <string name="str_ti">题</string>
+    <string name="str_get_bonus">领取红包</string>
+    <string name="title_my_family">我的家人</string>
+    <string name="title_health_info">健康资讯</string>
+    <string name="title_find">发现</string>
+    <string name="title_choose_birth">请选择出生年月</string>
+    <string name="str_blood_pressure">血压</string>
+    <string name="str_temperature">体温</string>
+    <string name="str_metabolism">新陈代谢</string>
+    <string name="str_peroid">月经周期</string>
+    <string name="str_blood_surgar">血糖</string>
+    <string name="str_walking">步行量</string>
+    <string name="str_water_consume">饮水量</string>
+    <string name="str_food_consume">食物摄入</string>
+    <string name="str_heart_rate_pulse">心率/脉搏</string>
+    <string name="str_stool_frequency">大便频率</string>
+    <string name="str_upd">尿量</string>
+    <string name="str_is_regular">是否规律 </string>
+    <string name="str_fpg">空腹血糖 </string>
+    <string name="str_veg_consume">蔬菜摄入量</string>
+    <string name="str_fruit_consume">水果摄入量</string>
+    <string name="str_milk_consume">奶类及奶制品摄入量</string>
+    <string name="str_bean_consume">豆制品摄入量</string>
+    <string name="str_yes">是 </string>
+    <string name="str_no">否 </string>
+    <string name="str_message">消息 </string>
+    <string name="str_delete_friend">解除好友</string>
+    <string name="str_delete_cart">删除套餐</string>
+    <string name="hint_search_health_info">请输入您要查找的体检关键字</string>
+    <string name="str_reminder">提醒</string>
+    <string name="title_add_contact">添加联系人</string>
+    <string name="str_added">已添加</string>
+    <string name="str_add">添加</string>
+    <string name="str_invite">邀请</string>
+    <string name="str_is_send_invite">是否发送好友邀请？</string>
+    <string name="str_change_pwd">首次登录请修改密码</string>
+    <string name="str_is_delete">是否解除好友？</string>
+    <string name="str_is_delete_cart">是否删除套餐？</string>
+    <string name="hint_search_person">请输入您要查找的手机号</string>
+    <string name="str_nick_name">备注名</string>
+    <string name="str_deleted">已解除</string>
+    <string name="title_message">消息</string>
+    <string name="str_friend_request">好友请求</string>
+    <string name="str_friend_delete">解除好友</string>
+    <string name="str_friend_reminder">提醒事件</string>
+    <string name="title_add_message">新建事件</string>
+    <string name="hint_add_message">请输入事件......</string>
+    <string name="str_start_time">开始时间:</string>
+    <string name="str_confirmed">确定</string>
+    <string name="title_start_time">请选择开始时间</string>
+    <string name="str_invited">已邀请</string>
+    <string name="str_height_unit">cm</string>
+    <string name="str_weight_unit">kg</string>
+    <string name="str_sbp_unit">mmHg</string>
+    <string name="str_heart_unit">次/分</string>
+    <string name="str_temp_unit">℃</string>
+    <string name="str_stool_unit">次/天</string>
+    <string name="str_upd_unit">ml/天</string>
+    <string name="str_fpg_unit">mmol/L</string>
+    <string name="str_walking_unit">步/天</string>
+    <string name="str_food_unit">g/天</string>
+    <string name="str_prompt">提示</string>
+    <string name="str_no_connection">无可用网络连接，请检查网络设置！</string>
+    <string name="health_inquary">健康资讯</string>
+    <string name="health_inquary_search_hint">请输入你要查找的体检关键字</string>
+    <string name="str_no_data">未查询到相关数据</string>
+    <string name="order_text">我的订单</string>
+    <string name="more_my_order">我的订单</string>
+    <string name="more_my_redpocket">我的红包</string>
+    <string name="more_my_attach">我的附件</string>
+    <string name="more_setting">设置</string>
+    <string name="more_system_messages">系统消息</string>
+    <string name="more_contact">联系绿柠檬</string>
+    <string name="more_setting_change_password">修改密码</string>
+    <string name="more_setting_secret_protection">隐私保护</string>
+    <string name="more_setting_service_promise">免责声明</string>
+    <string name="more_setting_about">关于</string>
+    <string name="more_setting_update">更新</string>
+    <string name="order_ways">支付方式:</string>
+    <string name="order_num">订单号:</string>
+    <string name="order_pay">付款</string>
+    <string name="str_telephone">4008-232-010</string>
+    <string name="str_contactr_me">呼叫</string>
+    <string name="str_my_order">我的订单</string>
+    <string name="str_order_no">订单号</string>
+    <string name="str_pay_way">支付方式</string>
+    <string name="str_pay">付款</string>
+    <string name="myred_get">获取的红包</string>
+    <string name="myred_use">已使用红包</string>
+    <string name="my_redpocket">我的红包</string>
+    <string name="str_available_bonus">可用</string>
+    <string name="str_bonus">红包</string>
+    <string name="redpocket_get_more">余额:</string>
+    <string name="str_rmb">￥ </string>
+    <string name="close_contact">联\t系\t人：  </string>
+    <string name="close_phone">联系方式：  </string>
+    <string name="close_mail">邮\t\t\t箱：  </string>
+    <string name="close_remark">备\t\t\t注：  </string>
+    <string name="add_contact">补充信息</string>
+    <string name="str_required_item">必填项</string>
+    <string name="str_picked_item">选填项</string>
+    <string name="str_contact_phone">联系方式</string>
+    <string name="str_contact_mail">邮箱</string>
+    <string name="str_contact_remark">备注</string>
+    <string name="btn_add_contact">确认添加</string>
+    <string name="str_cancel_order">取消订单</string>
+    <string name="error_name">联系人为必填项</string>
+    <string name="error_phone">联系方式为必填项</string>
+    <string name="str_shared">分享</string>
+    <string name="str_money_pocket">现金红包</string>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="error_select_oneorg">请选择一个机构</string>
+    <string name="err_msg_name">姓名不能为空</string>
+    <string name="err_msg_idcard">身份证号码不能为空</string>
+    <string name="err_msg_phone">手机号码不能为空</string>
+    <string name="err_msg_contractname">联系人姓名不能为空</string>
+    <string name="err_msg_contractphone">联系人手机号不能为空</string>
+    <string name="str_title_modify_mobile">修改绑定手机号</string>
+    <string name="str_modify">修改</string>
+    <string name="str_send_verify_code">发送验证码</string>
+    <string name="error_mobile_is_null">手机号码不能为空</string>
+    <string name="error_mobile_not_standard">手机号码格式错误</string>
+    <string name="str_send_code_again">重新发送</string>
+    <string name="str_input_new_mobile">输入新手机号</string>
+    <string name="str_modify_success">恭喜您修改成功！</string>
+    <string name="str_continue_subscribe">继续预约</string>
+    <string name="err_not_login">请先登录</string>
+    <string name="err_information_absence">请输入完整信息</string>
+    <string name="str_mobile_not_exist">手机号码不存在！</string>
+    <string name="str_login_again">请重新登录</string>
+    <string name="str_card_no">预约卡号：</string>
+    <string name="str_city_list">城市列表</string>
+    <string name="str_email_null">邮寄地址不能为空</string>
+    <string name="str_user_agreement">体检用户协议</string>
+    <string name="str_same_one">同一人</string>
+    <string name="str_mobile_way">手机格式不对</string>
+    <string name="str_email_way">邮箱格式不正确</string>
+    <string name="str_youbian_way">邮编格式不正确</string>
+    <string name="str_badyid_way">身份证格式不正确</string>
+    <string name="str_myhealth_user_info1">完善信息</string>
+    <string name="str_myhealth_user_info2">才能使用我的健康喔~</string>
+    <string name="str_myhealth_user_go">现在就去</string>
+    <string name="str_myhealth_booklet_info1">记录你的</string>
+    <string name="str_myhealth_booklet_info2">身体小账本吧~</string>
+    <string name="str_myhealth_booklet_addbooklet">+ 添加</string>
+    <string name="str_myhealth_addmore">加载更多</string>
+    <string name="str_myhealh_report">第一份体检报告吧~</string>
+    <string name="str_myhealth_checklist">查看列表</string>
+    <string name="str_layout_chart_min">最小值:</string>
+    <string name="str_layout_chart_max">最大值:</string>
+    <string name="str_today">今天</string>
+    <string name="str_linechart_normal">正常值/范围</string>
+    <string name="str_linechart_normal_weight">BMI:</string>
+    <string name="str_suggest">建议</string>
+    <string name="str_cicle">意义</string>
+    <string name="str_linechart_addbooklet">添加新数据</string>
+    <string name="str_linchart_view">在首页显示</string>
+    <string name="str_linechart_update">编辑数据</string>
+    <string name="str_basic_info_example1">如：lili</string>
+    <string name="health_managment_detail">报告明细</string>
+    <string name="health_managment_picture">（拍照上传）</string>
+    <string name="str_secret_protect">绿柠檬尊重您的资料和私隐权。承诺在遵守个人资料（私隐）条例的规定时，将完全符合国际认可的保障个人资料私隐（准则），并确保公司职员遵守最严格的安全和保密准则。
+ \n一、一般情况下，您无须提供您的姓名或其它个人信息即可访问我们的站点。但有时我们可能需要您提供一些信息，例如为了帮助您进行预约体检服务等。我们可能需要这些信息完成以上事务的处理或提供更好的服务。
+ \n二、绿柠檬将对您所提供的资料会进行严格的管理及保护，并将使用相应的技术，防止您个人资料的丢失、被盗用或被篡改。
+ \n三、绿柠檬在必要时将会由专业技术人员代为对该类信息资料进行电脑处理，以用来符合专业分工的要求。
+ \n四、绿柠檬将对您在商城所购商品信息进行严格保密。
+\n五、绿柠檬非常重视对用户隐私权的保护，承诺不会在未获得用户许可的情况下擅自将用户的个人资料信息泄露给任何第三方，但以下情况除外：
+\n\t\t1、政府部门、司法机关等依照法定程序要求绿柠檬披露个人资料时，绿柠檬将根据执法单位之要求或为公共安全之目的提供个人资料；
+\n\t\t2、由于用户将个人密码告知他人或与他人共享注册账户，由此导致的任何个人资料泄露；
+\n\t\t3、任何由于计算机问题、黑客攻击、计算机病毒侵入或发作、因政府管制而造成的暂时性关闭等影响网络正常经营的不可抗力而造成的个人资料泄露、丢失、被盗用或被窜改等；
+\n\t\t4、由于与绿柠檬链接的其他网站所造成之个人资料泄露及由此而导致的任何法律争议和后果。
+\n六、绿柠檬将建立和维持一合理的程序，以保护未成年人个人资料的保密性及安全性。绿柠檬郑重声明：任何16岁以下的未成年人参加网上活动应事先得到家长或其法定监护人的可经查证的同意。未经监护人之同意，绿柠檬将不会使用未成年人之个人资料，亦不会向任何第三方披露或传送可识别该未成人的个人资料。
+\n 七、绿柠檬采取了各种措施以确保您进行购物等活动的安全性，可以有效地防止信息在传送中出现丢失，盗用或被篡改等情况。您可放心地购买商品以及管理自己的健康报告。 </string>
+    <string name="str_legal_disclaimer">您在接受绿柠檬服务之前，请务必仔细阅读本声明。您访问绿柠檬、绿柠檬手机APP以及通过各类方式利用绿柠檬平台，都将被视作是对本声明全部内容的认可。
+\n1、您从事与绿柠檬相关的行为（包括但不限于访问浏览、利用、转载、宣传介绍），必须以善意且谨慎的态度行事；您不得故意或者过失的损害绿柠檬的各类合法权益，不得利用绿柠檬以任何方式直接或者间接地违反中华人民共和国法律、国际公约以及社会公德。
+\n2、绿柠檬刊载的各类文章、广告、您在绿柠檬发表的观点以及以链接形式推荐的其他网站内容，仅为提供更多信息以参考使用或者学习交流，并不代表绿柠檬的立场和观点。
+\n3、绿柠檬若因线路及绿柠檬控制范围外的硬件故障或因绿柠檬订定系统停机维护期间而导致暂停服务，于暂停服务期间给用户造成的一切损失，绿柠檬不承担任何法律责任。
+\n4、由于黑客攻击、电信部门技术调整或故障、网站升级、银行方面的问题等原因而造成的服务中断或者延迟，绿柠檬不承担任何法律责任。
+\n5、如因不可抗力或其它无法控制的原因造成网站销售系统崩溃或无法正常使用，从而导致网上交易无法完成或丢失有关的信息、记录等，绿柠檬将不承担责任。但是我们将会尽合理的可能协助处理善后事宜，并努力使客户减少可能遭受的经济损失。
+\n6、除绿柠檬注明之服务条款外，其他一切因使用绿柠檬而引致之任何意外、疏忽、诽谤、版权或知识产权侵犯及其所造成的损失（包括因下载而感染电脑病毒），绿柠檬不承担任何法律责任。
+\n7、绿柠檬可以按买方的要求预定体检相关服务，但我们的责任义务仅限于预约买方所购买的套餐，遇到套餐项目出现问题协助买方解决，如买方于体检中心自愿购买，自愿加项等，产生纠纷，绿柠檬不承担该部分赔偿。提醒买方在体检中心体检时，尽量绿柠檬的建议操作即可。</string>
+    <string name="str_about">绿柠檬健康致力于做中国最专业的在线健康管理平台。由多名来自于国内知名三甲医院医生、知名互联网公司中高层联合创办。绿柠檬健康凭借其雄厚的医疗资源、专业的网站及手机APP、规范的客户服务体系逐步成长为国内互联网健康最具潜力的品牌之一。 
+
+\n绿柠檬健康已与国内众多医院、品牌体检机构建立广泛合作，向个人用户和企业用户提供高性价比的体检套餐和高效快捷的体检预约服务，同时还提供体检报告管理、家庭健康管理、慢性病管理、健康资讯等增值健康服务。</string>
+    <string name="str_shengming">\n尊敬的用户，欢迎您注册成为绿柠檬APP用户。在注册前请您仔细阅读如下服务条款：
+\n1、本APP服务条款的确认和接纳本APP各项服务的所有权和运作权归绿柠檬拥有。
+\n2、用户必须
+\n(1)自行配备上网的所需设备， 包括个人电脑、调制解调器或其他必备上网装置。
+\n(2)自行负担个人上网所支付的与此服务有关的电话费用、 网络费用。
+\n3、用户在本APP交易平台上不得发布下列违法信息
+\n(1)反对宪法所确定的基本原则的；
+\n(2)危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；
+\n(3)损害国家荣誉和利益的；
+\n(4)煽动民族仇恨、民族歧视，破坏民族团结的；
+\n(5)破坏国家宗教政策，宣扬邪教和封建迷信的；
+\n(6)散布谣言，扰乱社会秩序，破坏社会稳定的；
+\n(7)散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；
+\n(8)侮辱或者诽谤他人，侵害他人合法权益的；
+\n(9)含有法律、行政法规禁止的其他内容的。
+\n4、有关个人资料
+\n用户同意：
+\n(1)提供及时、详尽及准确的个人资料。
+\n(2)同意接收来自本APP的信息。
+\n(3)不断更新注册资料，符合及时、详尽准确的要求。所有原始键入的资料将引用为注册资料。
+\n(4)通过绿柠檬获取、管理体检报告
+\n5、电子邮件
+\n用户在注册时应当选择稳定性及安全性相对较好的电子邮箱，并且同意接受并阅读本APP发往用户的各类电子邮件。如用户未及时从自己的电子邮箱接受电子邮件或 因用户电子邮箱或用户电子邮件接收及阅读程序本身的问题使电子邮件无法正常接收或阅读的，只要本APP成功发送了电子邮件，应当视为用户已经接收到相关的电 子邮件。电子邮件在发信服务器上所记录的发出时间视为送达时间。
+\n6、服务条款的修改
+\n绿柠檬有权在必要时修改服务条款，绿柠檬服务条款一旦发生变动，将会在重要页面上提示修改内容。如果不同意所改动的内容，用户可以主动取消获得的绿柠檬信息服务。如果用户继续享用本平台信息服务，则视为接受服务条款的变动。绿柠檬保留随时修改或中断服务而不需通知用户的权利。本公司行使修改或中断服务的权利，不需对用户或第三方负责。
+\n7、用户的帐号、密码和安全性
+\n您一旦注册成功成为用户，您将得到一个密码和帐号。如果您不保管好自己的帐号和密码安全，将负全部责任。另外，每个用户都要对其帐户中的所有活动和事件负 全责。您可随时根据指示改变您的密码，也可以结束旧的帐户重开一个新帐户。用户同意若发现任何非法使用用户帐号或安全漏洞的情况，请立即通知本平台。
+\n8、拒绝提供担保
+\n用户明确同意信息服务的使用由用户个人承担风险。绿柠檬不担保服务不会受中断，对服务的及时性，安全性，出错发生都不作担保，但会在能力范围内，避免出错。</string>
+    <string name="soft_updating">下载中...</string>
+    <string name="soft_update_cancel">取消</string>
+    <string name="str_today_task">今日任务</string>
+
+</resources>

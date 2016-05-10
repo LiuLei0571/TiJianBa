@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/rlyt_helath_inquary_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/helath_inquary_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/org_background_grey"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dimen_border_size_xnormal"
+            android:paddingTop="@dimen/dimen_border_size_xnormal"
+            android:textColor="@color/org_dark_gray"
+            android:textSize="@dimen/dimen_font_size_xnormal" />
+
+        <ImageView
+            android:id="@+id/helath_inquary_title_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_share_info" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/helath_inquary_detial_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlyt_helath_inquary_title"
+        android:layout_marginBottom="@dimen/dimen_border_size_normal"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/dimen_border_size_normal"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/helath_inquary_detial_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helath_inquary_detial_img"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_marginRight="@dimen/header_footer_left_right_padding"
+        android:textColor="@color/cart_grey" />
+
+</RelativeLayout>

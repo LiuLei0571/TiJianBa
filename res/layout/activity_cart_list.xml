@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/org_background_grey" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/dimen_border_size_xnormal"
+            android:paddingTop="@dimen/dimen_border_size_xnormal"
+            android:text="@string/str_cart"
+            android:textColor="@color/org_dark_gray"
+            android:textSize="@dimen/dimen_font_size_xnormal" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_seperate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_top"
+        android:background="@drawable/seperate" />
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_seperate"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dimen_border_size_small"
+        android:paddingLeft="@dimen/dimen_border_size_xnormal"
+        android:paddingTop="@dimen/dimen_border_size_small" >
+
+        <CheckBox
+            android:id="@+id/chb_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox_cart"
+            android:checked="false" />
+
+        <TextView
+            android:id="@+id/tv_cart_num_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_border_size_xnormal"
+            android:layout_toRightOf="@id/chb_all"
+            android:text="@string/str_all"
+            android:textColor="@color/edt_grey"
+            android:textSize="@dimen/dimen_font_size_lsmall" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_cart_num_title"
+            android:textColor="@color/edt_grey"
+            android:textSize="@dimen/dimen_font_size_lsmall" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_num"
+            android:text="@string/str_cart_zhong"
+            android:textColor="@color/edt_grey"
+            android:textSize="@dimen/dimen_font_size_lsmall" />
+
+        <TextView
+            android:id="@+id/tv_edit_or_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_border_size_xnormal"
+            android:text="@string/str_edit"
+            android:textColor="@color/edt_grey"
+            android:textSize="@dimen/dimen_font_size_lsmall" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_seperate_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_title"
+        android:background="@drawable/seperate" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:padding="@dimen/dimen_border_size_xnormal" >
+
+        <TextView
+            android:id="@+id/tv_total_titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/str_total"
+            android:textColor="@color/edt_grey"
+            android:textSize="@dimen/dimen_font_size_xnormal" />
+
+        <TextView
+            android:id="@+id/tv_money_titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_total_titles"
+            android:text="@string/str_money"
+            android:textColor="@color/org_orange"
+            android:textSize="@dimen/dimen_font_size_normal"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_money_titles"
+            android:text="0.00"
+            android:textColor="@color/org_orange"
+            android:textSize="@dimen/dimen_font_size_large"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rl_close_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:id="@+id/iv_close_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/btn_clear_now_unenable" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/str_clear_now"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_font_size_xnormal" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.fortysevendeg.swipelistview.SwipeListView
+        android:id="@+id/lv_cart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_bottom"
+        android:layout_below="@id/iv_seperate_sv"
+        android:background="@color/white"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@drawable/seperate"
+        android:listSelector="@color/transparent"
+        android:paddingLeft="@dimen/dimen_border_size_xnormal"
+        android:paddingRight="@dimen/dimen_border_size_xnormal"
+        android:scrollbars="@null"
+        swipe:swipeBackView="@+id/back"
+        swipe:swipeCloseAllItemsWhenMoveList="true"
+        swipe:swipeDrawableChecked="@drawable/choice_selected"
+        swipe:swipeDrawableUnchecked="@drawable/choice_unselected"
+        swipe:swipeFrontView="@+id/front"
+        swipe:swipeMode="left" >
+    </com.fortysevendeg.swipelistview.SwipeListView>
+
+    <TextView
+        android:id="@+id/tv_no_data"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_bottom"
+        android:layout_below="@id/iv_seperate_sv"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_border_size_xnormal"
+        android:paddingLeft="@dimen/dimen_border_size_normal"
+        android:paddingTop="@dimen/dimen_border_size_xnormal"
+        android:text="@string/str_no_data"
+        android:textColor="@color/my_orange"
+        android:textSize="@dimen/dimen_font_size_small"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lv_cart"
+        android:background="@drawable/seperate" />
+
+</RelativeLayout>

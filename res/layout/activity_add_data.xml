@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/org_background_grey" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/dimen_border_size_xnormal"
+            android:paddingTop="@dimen/dimen_border_size_xnormal"
+            android:text="@string/health_management_add"
+            android:textColor="@color/org_dark_gray"
+            android:textSize="@dimen/dimen_font_size_xnormal" />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_title"
+            android:layout_alignBottom="@+id/tv_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="编辑"
+            android:textColor="@color/my_green"
+            android:textSize="@dimen/dimen_font_size_xnormal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_border_size_normal"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_border_size_normal" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/dimen_border_size_normal" >
+
+            <TextView
+                style="@style/textview_subscribe"
+                android:layout_gravity="center_vertical|left"
+                android:text="@string/str_riqi" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                style="@style/edittext_subscribe"
+                android:layout_gravity="right"
+                  android:textSize="@dimen/dimen_font_size_xnormal"
+                android:gravity="right|center_vertical" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/seperate" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/dimen_border_size_normal" >
+
+            <TextView
+                style="@style/textview_subscribe"
+                android:layout_gravity="center_vertical|left"
+                android:text="@string/str_shijian" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/edittext_subscribe"
+                android:layout_gravity="right"
+                  android:textSize="@dimen/dimen_font_size_xnormal"
+                android:gravity="right|center_vertical" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/seperate" />
+
+        
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_unit_title"
+                    style="@style/textview_subscribe"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_unit" />
+
+                <EditText
+                    android:id="@+id/et_unit"
+                    style="@style/edittext_subscribe"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_unit_name"
+                    android:layout_toRightOf="@+id/tv_unit_title"
+                    android:gravity="center_vertical|right"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/dimen_font_size_xnormal"
+                    android:padding="@dimen/dimen_border_size_xsmall"
+                     />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dimen_border_size_xxsmall"
+                    android:id="@+id/tv_unit_name"
+                    style="@style/textview_subscribe"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_border_size_normal"
+                     />
+            </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <android.inputmethodservice.KeyboardView
+            android:id="@+id/keyboard_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:keyTextColor="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

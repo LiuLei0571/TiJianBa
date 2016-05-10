@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/dimen_border_size_lsmall" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:tag="back" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/sub_green"
+                android:gravity="center"
+                android:text="@string/str_edit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_font_size_large" />
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/my_orange"
+                android:gravity="center"
+                android:text="@string/str_delete"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_font_size_large" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/front"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/dimen_border_size_xsmall"
+            android:paddingTop="@dimen/dimen_border_size_xsmall"
+            android:tag="front" >
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_report" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

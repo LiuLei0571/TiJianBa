@@ -1,0 +1,213 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res/com.juanliuinformation.lvningmeng"
+     tools:context="com.hengtiansoft.tijianba.activity.BasicInforActivity"
+    >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/org_background_grey"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/dimen_border_size_xnormal"
+        android:paddingTop="@dimen/dimen_border_size_xnormal"
+        android:text="@string/my_basic_info"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/dimen_font_size_xnormal" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_border_size_normal"
+        android:layout_marginTop="@dimen/dimen_border_size_normal"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_border_size_xnormal"
+        android:paddingRight="@dimen/dimen_border_size_xnormal" >
+
+        <TextView
+            style="@style/textview_subscribe"
+            android:layout_gravity="center_vertical|left"
+            android:text="@string/str_logo" />
+        
+        
+        
+        <com.hengtiansoft.tijianba.util.CircleImageView
+            android:id="@+id/img_login_mylogo"
+            android:layout_width="@dimen/dimen_image_height_cart"
+            android:layout_height="@dimen/dimen_image_height_cart"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginBottom="@dimen/dimen_border_size_lsmall"
+            android:layout_marginTop="@dimen/dimen_border_size_lsmall"
+            android:src="@drawable/ic_login_mylogo" 
+            app:border_width="2dp"
+            app:border_color="@color/my_green"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_border_size_xnormal"
+            android:paddingRight="@dimen/dimen_border_size_xnormal" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/textview_subscribe"
+                    android:layout_gravity="center_vertical|left"
+                    android:text="@string/str_nicheng" />
+
+                <EditText
+                    android:id="@+id/et_mynicheng"
+                    style="@style/edittext_subscribe"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center_vertical|right"
+                     />
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seperate" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_basic_gender"
+                    style="@style/textview_subscribe"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/str_basic_gender"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+
+                <RadioGroup
+                    android:id="@+id/rg_basic_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rbtn_basic_male"
+                        style="@style/radioButton_subscribe_green"
+                        android:checked="false"
+                        android:text="@string/str_male"
+                        android:textColor="@color/org_detail_grey" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_basic_female"
+                        style="@style/radioButton_subscribe_red"
+                        android:checked="false"
+                        android:text="@string/str_female" />
+                </RadioGroup>
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seperate" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/textview_subscribe"
+                    android:layout_gravity="center_vertical|left"
+                    android:text="@string/str_birth" />
+
+                <ImageView
+                    android:id="@+id/img_calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:src="@drawable/health_management_calendarview" />
+
+                <TextView
+                    android:id="@+id/tv_calendar"
+                    style="@style/textview_subscribe"
+                    android:layout_gravity="center_vertical|right"
+                    android:textColor="@color/org_light_gray"
+                    android:gravity="center_vertical|right" />
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seperate" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_hight"
+                    style="@style/textview_subscribe"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_basic_height" />
+
+                <EditText
+                    android:id="@+id/et_myhight"
+                    style="@style/edittext_subscribe"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_unit"
+                    android:layout_toRightOf="@+id/tv_hight"
+                    android:gravity="center_vertical|right"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/tv_unit"
+                    style="@style/textview_subscribe"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/str_height_unit"
+                     />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingBottom="@dimen/dimen_border_size_xnormal"
+            android:paddingTop="@dimen/dimen_border_size_xnormal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/btn_sub_confirm" />
+
+            <TextView
+                android:id="@+id/tv_phone_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/str_save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_font_size_xnormal" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

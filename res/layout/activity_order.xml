@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/detail_background_grey"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/tv_order_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/org_background_grey"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/dimen_border_size_xnormal"
+        android:paddingTop="@dimen/dimen_border_size_xnormal"
+        android:text="@string/str_my_order"
+        android:textColor="@color/org_dark_gray"
+        android:textSize="@dimen/dimen_font_size_xnormal" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/list_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_order_title"
+        android:layout_marginLeft="@dimen/dimen_border_size_xsmall"
+        android:layout_marginRight="@dimen/dimen_border_size_xsmall"
+        android:background="@color/detail_background_grey"
+        android:divider="@color/detail_background_grey"
+        android:dividerHeight="@dimen/dimen_border_size_xxsmall"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/tv_no_data"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_order_title"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_border_size_xnormal"
+        android:paddingLeft="@dimen/dimen_border_size_normal"
+        android:paddingTop="@dimen/dimen_border_size_xnormal"
+        android:text="@string/str_no_data"
+        android:textColor="@color/menu_green"
+        android:textSize="@dimen/dimen_font_size_small"
+        android:visibility="gone" />
+
+</RelativeLayout>

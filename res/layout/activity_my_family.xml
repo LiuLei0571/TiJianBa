@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/detail_background_grey"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/org_background_grey" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/org_background_grey"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dimen_border_size_xnormal"
+            android:paddingTop="@dimen/dimen_border_size_xnormal"
+            android:text="@string/title_my_family"
+            android:textColor="@color/org_dark_gray"
+            android:textSize="@dimen/dimen_font_size_xnormal" />
+
+        <ImageView
+            android:id="@+id/iv_add_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_border_size_normal"
+            android:src="@drawable/ic_add_person" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_top"
+        android:layout_marginBottom="@dimen/dimen_border_size_xnormal"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dimen_border_size_xnormal"
+        android:paddingLeft="@dimen/dimen_border_size_normal"
+        android:paddingRight="@dimen/dimen_border_size_normal"
+        android:paddingTop="@dimen/dimen_border_size_xnormal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="3"
+            android:textColor="@color/my_orange"
+            android:textSize="@dimen/dimen_font_size_xnormal" />
+
+        <ImageView
+            android:id="@+id/iv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_message" />
+
+        <ImageView
+            android:id="@+id/iv_more_meaasge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/iv_message"
+            android:layout_alignTop="@id/iv_message"
+            android:src="@drawable/ic_more_message" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_border_size_small"
+            android:layout_toRightOf="@id/iv_message"
+            android:gravity="center_vertical"
+            android:text="@string/str_message"
+            android:textColor="@color/cart_grey"
+            android:textSize="@dimen/dimen_font_size_xnormal" />
+    </RelativeLayout>
+
+    <com.fortysevendeg.swipelistview.SwipeListView
+        android:id="@+id/lv_contact"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_message"
+        android:background="@color/white"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@drawable/seperate"
+        android:listSelector="@color/transparent"
+        swipe:swipeBackView="@+id/back"
+        swipe:swipeCloseAllItemsWhenMoveList="true"
+        swipe:swipeDrawableChecked="@drawable/choice_selected"
+        swipe:swipeDrawableUnchecked="@drawable/choice_unselected"
+        swipe:swipeFrontView="@+id/front"
+        swipe:swipeMode="left" >
+    </com.fortysevendeg.swipelistview.SwipeListView>
+
+</RelativeLayout>

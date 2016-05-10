@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_border_size_xsmall" >
+
+    <TextView
+        android:id="@+id/tv_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:singleLine="true"
+        android:text="55kg"
+        android:textColor="@color/list_light_gray"
+        android:textSize="@dimen/dimen_font_size_lsmall" />
+
+    <ImageView
+        android:id="@+id/iv_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_border_size_xsmall"
+        android:layout_toLeftOf="@id/tv_value"
+        android:src="@drawable/ic_down" 
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:singleLine="true"
+        android:text="体重"
+        android:textColor="@color/list_gray"
+        android:textSize="@dimen/dimen_font_size_lsmall" />
+
+</RelativeLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/other_immunological_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/textview_subscribe"
+            android:layout_gravity="center_vertical|left"
+            android:paddingLeft="@dimen/dimen_border_size_normal"
+            android:text="@string/tv_analysis_report_immunological_detection" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:paddingRight="@dimen/dimen_border_size_normal"
+            android:src="@drawable/exhibition_arrow_big" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/other_imu_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/view_blank_imu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_border_size_small"
+            android:background="@color/background_gray"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_border_size_normal"
+            android:paddingRight="@dimen/dimen_border_size_normal" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/textview_subscribe"
+                    android:layout_gravity="center_vertical|left"
+                    android:text="@string/other_igG" />
+
+                <EditText
+                    android:id="@+id/other_igg"
+                    style="@style/edittext_health"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/blood_routine_hint" />
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seperate" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/textview_subscribe"
+                    android:layout_gravity="center_vertical|left"
+                    android:text="@string/other_igA" />
+
+                <EditText
+                    android:id="@+id/other_iga"
+                    style="@style/edittext_health"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/blood_routine_hint" />
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seperate" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/textview_subscribe"
+                    android:layout_gravity="center_vertical|left"
+                    android:text="@string/other_igM" />
+
+                <EditText
+                    android:id="@+id/other_igm"
+                    style="@style/edittext_health"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/blood_routine_hint" />
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seperate" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/textview_subscribe"
+                    android:layout_gravity="center_vertical|left"
+                    android:text="@string/other_igD" />
+
+                <EditText
+                    android:id="@+id/other_igd"
+                    style="@style/edittext_health"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/blood_routine_hint" />
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seperate" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/textview_subscribe"
+                    android:layout_gravity="center_vertical|left"
+                    android:text="@string/other_igE" />
+
+                <EditText
+                    android:id="@+id/other_ige"
+                    style="@style/edittext_health"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/blood_routine_hint" />
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seperate" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/textview_subscribe"
+                    android:layout_gravity="center_vertical|left"
+                    android:text="@string/other_igT" />
+
+                <EditText
+                    android:id="@+id/other_igt"
+                    style="@style/edittext_health"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/blood_routine_hint" />
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seperate" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/textview_subscribe"
+                    android:layout_gravity="center_vertical|left"
+                    android:text="@string/other_rf" />
+
+                <RadioGroup
+                    android:id="@+id/other_rf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/other_feminine"
+                        style="@style/radioButton_subscribe_green"
+                        android:checked="false"
+                        android:text="@string/str_negative"
+                        android:textColor="@color/org_detail_grey" />
+
+                    <RadioButton
+                        android:id="@+id/other_positive"
+                        style="@style/radioButton_subscribe_red"
+                        android:checked="false"
+                        android:text="@string/str_positive" />
+                </RadioGroup>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

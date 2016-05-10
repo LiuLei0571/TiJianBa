@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_border_size_small" >
+
+    <ImageView
+        android:id="@+id/img_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_border_size_small"
+        android:layout_marginLeft="@dimen/dimen_border_size_xxsmall"
+          android:layout_marginRight="@dimen/dimen_border_size_xxsmall"
+        android:background="@drawable/background_chart" />
+
+    <TextView
+        android:id="@+id/et_chart_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_marginTop="@dimen/dimen_border_size_lsmall"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_font_size_lsmall" />
+
+    <TextView
+        android:id="@+id/tv_chart_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_chart_minname"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/header_footer_left_right_padding"
+        android:layout_marginTop="@dimen/dimen_border_size_lsmall"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_font_size_xsmall" />
+
+    <TextView
+        android:id="@+id/tv_chart_minname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_chart_name"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_marginTop="@dimen/dimen_border_size_xxsmall"
+        android:text="@string/str_layout_chart_min"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_font_size_small" />
+
+    <TextView
+        android:id="@+id/tv_chart_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_chart_minname"
+        android:layout_marginLeft="@dimen/dimen_border_size_xsmall"
+        android:layout_toRightOf="@+id/tv_chart_minname"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_font_size_small" />
+
+    <TextView
+        android:id="@+id/tv_chart_maxname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_chart_min"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_toRightOf="@+id/tv_chart_min"
+        android:text="@string/str_layout_chart_max"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_font_size_small" />
+
+    <TextView
+        android:id="@+id/tv_chart_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_chart_min"
+        android:layout_marginLeft="@dimen/dimen_border_size_xsmall"
+        android:layout_toRightOf="@+id/tv_chart_maxname"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_font_size_small" 
+        />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/my_chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/img_background"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/tv_view_advice"
+        android:layout_marginBottom="@dimen/dimen_border_size_small"
+        android:layout_marginLeft="@dimen/dimen_border_size_xsmall"
+        android:layout_marginRight="@dimen/dimen_border_size_xsmall"
+        android:layout_marginTop="@dimen/dimen_chart"
+        android:paddingBottom="@dimen/indicator_right_padding" />
+ <TextView
+        android:id="@+id/tv_view_advice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_chart_minname"
+        android:layout_marginTop="@dimen/dimen_border_size_xsmall"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_marginRight="@dimen/dimen_border_size_normal"
+        android:text="今日正常"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_chart_message"
+        android:background="@color/bg_chart_text"
+        android:textColor="@color/my_logininfor_text"
+        android:padding="@dimen/dimen_border_size_xxsmall"
+        android:textSize="@dimen/dimen_font_size_small" 
+         />
+ 
+    <View
+        android:id="@+id/view_max"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_below="@+id/tv_view_advice"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_marginRight="@dimen/dimen_border_size_normal"
+        android:layout_marginTop="@dimen/dimen_border_size_xsmall"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_view_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view_max"
+        android:layout_marginRight="@dimen/dimen_border_size_normal"
+        android:layout_marginTop="@dimen/dimen_border_size_xxsmall"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_font_size_xsmall" 
+        />
+
+    <TextView
+        android:id="@+id/tv_chart_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_chart_max"
+        android:layout_alignBottom="@+id/tv_chart_max"
+        android:layout_alignRight="@+id/tv_chart_unit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_font_size_small" />
+
+    <TextView
+        android:id="@+id/tv_chart_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_chart_minname"
+        android:layout_toLeftOf="@+id/tv_chart_unit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_font_size_lsmall" />
+
+    <TextView
+        android:id="@+id/tv_view_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_background"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dimen_border_size_xlarge"
+        android:layout_marginRight="@dimen/dimen_border_size_normal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_font_size_xsmall" />
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/detail_background_grey" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/org_background_grey"
+        android:paddingBottom="@dimen/dimen_border_size_xnormal"
+        android:paddingTop="@dimen/dimen_border_size_xnormal" >
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dimen_border_size_normal"
+            android:text="@string/str_cancel"
+            android:textColor="@color/mall_light_gray"
+            android:textSize="@dimen/dimen_font_size_lsmall" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:text="@string/title_add_message"
+            android:textColor="@color/org_dark_gray"
+            android:textSize="@dimen/dimen_font_size_xnormal" />
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_border_size_normal"
+            android:text="@string/str_confirmed"
+            android:textColor="@color/sub_green"
+            android:textSize="@dimen/dimen_font_size_lsmall" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_meaasge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_border_size_xnormal"
+        android:layout_marginTop="@dimen/dimen_border_size_xnormal"
+        android:src="@drawable/background_add_message" />
+
+    <EditText
+        android:id="@+id/edt_meaasge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_meaasge"
+        android:layout_alignLeft="@id/iv_meaasge"
+        android:layout_alignRight="@id/iv_meaasge"
+        android:layout_alignTop="@id/iv_meaasge"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="@string/hint_add_message"
+        android:inputType="textMultiLine"
+        android:padding="@dimen/dimen_border_size_lsmall"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/dimen_font_size_lsmall" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_meaasge"
+        android:background="@color/my_orange"
+        android:paddingLeft="@dimen/dimen_border_size_xsmall" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_border_size_xnormal" >
+
+            <TextView
+                android:id="@+id/tv_start_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="@string/str_start_time"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/dimen_font_size_lsmall" />
+
+            <TextView
+                android:id="@+id/tv_remind_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_border_size_small"
+                android:layout_toRightOf="@id/tv_start_title"
+                android:gravity="center_vertical"
+                android:text="2014-12-12 18:00"
+                android:textColor="@color/cart_grey"
+                android:textSize="@dimen/dimen_font_size_lsmall" />
+
+            <ImageView
+                android:id="@+id/iv_calender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/health_management_calendarview" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

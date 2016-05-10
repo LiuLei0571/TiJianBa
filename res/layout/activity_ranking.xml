@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffff"
+	 >
+
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:background="@color/ranking_tab_bg"
+       android:orientation="horizontal"
+       android:gravity="center_vertical"
+       android:paddingLeft="10dp"
+       android:paddingRight="10dp"
+       >
+       <ImageButton 
+           android:id="@+id/ranking_finish_ib"
+           android:layout_width="15dp"
+           android:layout_height="15dp"
+           android:background="@drawable/paihang_back"
+           />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:text="周排行榜"
+           android:textColor="@color/ranking_light_gray"
+           android:textSize="@dimen/dimen_font_size_xnormal" />
+       
+       	<LinearLayout 
+       	    android:id="@+id/rangking_gift"
+       	    android:layout_width="40dp"
+       	    android:layout_height="match_parent"
+       	    android:gravity="center_vertical"
+       	    android:paddingLeft="20dp"
+       	    >
+       	  <ImageButton 
+           android:layout_width="15dp"
+           android:layout_height="15dp"
+           android:background="@drawable/paihang_liwu"
+           android:clickable="false"
+           />
+       	  <ImageView 
+       	      android:layout_width="10dp"
+       	      android:layout_height="10dp"
+       	      android:background="@drawable/paihang_node"
+       	      android:layout_marginLeft="-5dp"
+       	      />
+       	</LinearLayout>
+       
+   </LinearLayout>
+
+  <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="40dp" 
+       android:background="#80c3c2"
+       android:gravity="center_vertical">
+
+       <ImageButton
+           android:id="@+id/rangking_backweek_ib"
+           android:layout_width="20dp"
+           android:layout_height="20dp"
+           android:layout_marginLeft="10dp"
+           android:background="@drawable/paihang_back2" />
+       
+       <LinearLayout 
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_marginLeft="-30dp"
+           android:gravity="center"
+           android:clickable="false"
+           >
+           
+         <TextView
+           android:id="@+id/ranking_week_tv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#407877"
+           android:textSize="@dimen/dimen_font_size_xnormal"
+           android:text="本周" />
+              
+         <TextView
+           android:id="@+id/ranking_date_tv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="5月4日-5月10日"
+           android:layout_marginLeft="10dp"
+           android:textColor="#ffff"
+           android:textSize="@dimen/dimen_font_size_lsmall"
+            />
+           
+       </LinearLayout>
+       
+       <LinearLayout 
+           android:id="@+id/rangking_nextweek"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:gravity="center"
+           >
+
+        <ImageButton
+           android:id="@+id/rangking_nextweek_ib" 
+           android:layout_width="20dp"
+           android:layout_height="20dp"
+           android:background="@drawable/paihang_back3"
+           android:clickable="false"
+           android:visibility="invisible" />  
+           
+       </LinearLayout>
+       
+
+       
+   </LinearLayout>
+   
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="130dp"
+       android:padding="10dp"
+       android:orientation="horizontal"
+       >
+         
+       <LinearLayout 
+            android:layout_weight="1"
+      	    android:layout_width="0dp"
+      	    android:layout_height="120dp" >
+       	  
+          <ImageView 
+       	      android:layout_width="120dp"
+       	      android:layout_height="100dp"
+       	      android:layout_marginLeft="20dp"
+       	      android:background="@drawable/paihang1"/>
+           </LinearLayout>
+
+      	<LinearLayout 
+      	    android:layout_weight="1"
+      	    android:layout_width="0dp"
+      	    android:layout_height="120dp"
+      	    android:orientation="vertical"
+      	    android:layout_marginLeft="-10dp"
+      	    
+      	    >
+          
+      	    <ImageView 
+       	      android:layout_width="100dp"
+       	      android:layout_height="15dp"
+       	      android:layout_marginLeft="10dp"
+       	      android:layout_marginBottom="3dp"
+       	      android:background="@drawable/paihang2"/>
+      	    <LinearLayout 
+      	        android:layout_width="150dp"
+      	        android:layout_height="80dp"
+      	        android:background="@drawable/paihang_order_bg"
+      	        android:orientation="vertical"
+      	        android:gravity="center"
+      	        >
+
+      	        <TextView
+      	            android:layout_width="wrap_content"
+      	            android:layout_height="wrap_content"
+      	            android:textColor="#ffe400"
+      	            android:gravity="center_vertical"
+      	            android:textSize="28dp"
+      	            android:paddingTop="10dp"
+      	            android:text="28"
+      	            android:layout_marginTop="-15dp" />
+
+      	        <TextView 
+      	            android:layout_width="wrap_content"
+      	            android:layout_height="wrap_content"
+      	            android:textSize="10dp"
+      	            android:textColor="#619998"
+      	            android:layout_marginLeft="1dp"
+      	            android:layout_marginTop="10dp"
+      	            android:text="874公里"
+      	            />
+      	    </LinearLayout>
+      	    
+      	</LinearLayout>
+   </LinearLayout>
+   
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#d5f2ef"
+       >
+    <ListView 
+       android:padding="15dp"
+       android:id="@+id/ranking_lv"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:fadingEdge="none"
+       android:scrollbars="none" 
+       android:divider="#00000000"
+	   android:dividerHeight="10dp"
+       ></ListView>
+   </LinearLayout>
+    
+
+   
+   
+</LinearLayout>

@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/detail_background_grey"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/tv_order_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/org_background_grey"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/dimen_border_size_xnormal"
+        android:paddingTop="@dimen/dimen_border_size_xnormal"
+        android:text="@string/more_setting_about"
+        android:textColor="@color/org_dark_gray"
+        android:textSize="@dimen/dimen_font_size_xnormal" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rlyt_about_good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/dimen_border_size_lsmall"
+            android:paddingLeft="@dimen/dimen_border_size_normal"
+            android:paddingRight="@dimen/dimen_border_size_normal"
+            android:paddingTop="@dimen/dimen_border_size_lsmall" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/dimen_border_size_small"
+                android:src="@drawable/copyright_arrow_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_border_size_small"
+                android:text="给好评"
+                android:textColor="@color/org_light_gray"
+                android:textSize="@dimen/dimen_font_size_lsmall" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/seperate" />
+
+        <RelativeLayout
+            android:id="@+id/rlyt_about_welcom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/dimen_border_size_lsmall"
+            android:paddingLeft="@dimen/dimen_border_size_normal"
+            android:paddingRight="@dimen/dimen_border_size_normal"
+            android:paddingTop="@dimen/dimen_border_size_lsmall" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/dimen_border_size_small"
+                android:src="@drawable/copyright_arrow_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_border_size_small"
+                android:text="欢迎页"
+                android:textColor="@color/org_light_gray"
+                android:textSize="@dimen/dimen_font_size_lsmall" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/seperate" />
+
+        <RelativeLayout
+            android:id="@+id/rlyt_about_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/dimen_border_size_lsmall"
+            android:paddingLeft="@dimen/dimen_border_size_normal"
+            android:paddingRight="@dimen/dimen_border_size_normal"
+            android:paddingTop="@dimen/dimen_border_size_lsmall" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/dimen_border_size_small"
+                android:src="@drawable/copyright_arrow_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_border_size_small"
+                android:text="帮助与反馈"
+                android:textColor="@color/org_light_gray"
+                android:textSize="@dimen/dimen_font_size_lsmall" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/et_medical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_border_size_xlarge"
+        android:text="medical1.1.0"
+        android:textColor="@color/my_green"
+        android:textSize="@dimen/dimen_font_size_xsmall" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_medical"
+        android:layout_below="@+id/tv_order_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_border_size_lsmall"
+        android:layout_marginTop="@dimen/dimen_border_size_xlarge"
+        android:src="@drawable/about_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_copyright"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_border_size_small"
+        android:text="浙江网新恒天软件有限公司"
+        android:textSize="@dimen/dimen_font_size_xsmall" />
+    <TextView
+        android:id="@+id/et_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_border_size_llarge"
+        android:text="Copyright ©2014/ All Rights Reserved"
+        android:textColor="@color/cart_grey"
+        android:textSize="@dimen/dimen_font_size_xxsmall" />
+
+</RelativeLayout>

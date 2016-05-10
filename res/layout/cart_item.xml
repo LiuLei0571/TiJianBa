@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingBottom="@dimen/dimen_border_size_xnormal"
+    android:paddingTop="@dimen/dimen_border_size_xnormal" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/org_holo_grey"
+            android:tag="back" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cart_red"
+                android:gravity="center"
+                android:text="@string/str_delete_cart"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_font_size_xnormal" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/front"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:padding="@dimen/dimen_border_size_xnormal"
+            android:tag="front" >
+
+            <CheckBox
+                android:id="@+id/chb_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:button="@drawable/checkbox_cart"
+                android:checked="false" />
+
+            <ImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="@dimen/dimen_image_width_cart"
+                android:layout_height="@dimen/dimen_image_height_cart"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/dimen_border_size_small"
+                android:layout_marginTop="@dimen/dimen_border_size_xxsmall"
+                android:layout_toRightOf="@id/chb_cart"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/iv_cart_family"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/iv_menu"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="@dimen/dimen_border_size_xsmall"
+                android:src="@drawable/iv_cart_family" />
+
+            <TextView
+                android:id="@+id/tv_menu_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/org_orange"
+                android:textSize="@dimen/dimen_font_size_xnormal" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/dimen_border_size_normal"
+                android:layout_marginRight="@dimen/dimen_border_size_normal"
+                android:layout_toLeftOf="@id/tv_menu_price"
+                android:layout_toRightOf="@id/iv_menu"
+                android:maxLines="2"
+                android:textColor="@color/edt_grey"
+                android:textSize="@dimen/dimen_font_size_small" />
+
+            <LinearLayout
+                android:id="@+id/ll_edit_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/dimen_border_size_normal"
+                android:layout_toLeftOf="@id/tv_menu_price"
+                android:layout_toRightOf="@id/iv_menu"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <CheckBox
+                    android:id="@+id/chb_cart_del"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_num_del"
+                    android:checked="false" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_cart_num" />
+
+                    <TextView
+                        android:id="@+id/tv_edit_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="1"
+                        android:textColor="@color/edt_grey"
+                        android:textSize="@dimen/dimen_font_size_normal" />
+                </RelativeLayout>
+
+                <CheckBox
+                    android:id="@+id/chb_cart_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_num_add"
+                    android:checked="false" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_cart_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_menu"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/edt_grey"
+                android:textSize="@dimen/dimen_font_size_lsmall" />
+
+            <TextView
+                android:id="@+id/tv_menu_price_market"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_cart_num"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/dimen_border_size_xsmall"
+                android:textColor="@color/org_light_gray"
+                android:textSize="@dimen/dimen_font_size_xsmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_menu_price_market"
+                android:layout_below="@id/tv_menu_price"
+                android:layout_marginRight="@dimen/dimen_border_size_small"
+                android:layout_toLeftOf="@id/tv_menu_price_market"
+                android:text="@string/str_market_price"
+                android:textColor="@color/org_gray"
+                android:textSize="@dimen/dimen_font_size_xxsmall" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_menu"
+                android:layout_alignLeft="@id/tv_name"
+                android:textColor="@color/cart_grey"
+                android:textSize="@dimen/dimen_font_size_small" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:background="@drawable/paihang_listview_bg"
+>
+    
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        >
+        <ImageView 
+            android:id="@+id/ranking_item_order_iv"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:background="@drawable/paihang_one"/>
+        <ImageView 
+            android:id="@+id/ranking_item_img_iv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/paihang_baby"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="match_parent"
+        >
+        <TextView 
+            android:id="@+id/ranking_item_name"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="name"
+            android:textSize="14dp"
+            android:textColor="#5f5f5f"
+            />
+        
+    </LinearLayout>
+        
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        >
+        
+      <ImageView 
+            android:id="@+id/ranking_item_img_star"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/paihang_one_star"/>
+        <TextView 
+            android:id="@+id/ranking_item_long"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="long"
+            android:textColor="#5f5f5f"
+            android:textSize="10dp"
+            />        
+       <TextView 
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="公里"
+            android:textColor="#5f5f5f"
+            android:textSize="10dp"
+            />
+    </LinearLayout>
+            
+            
+
+</LinearLayout>

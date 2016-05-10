@@ -1,0 +1,221 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/org_background_grey"
+        android:paddingBottom="@dimen/dimen_border_size_xnormal"
+        android:paddingTop="@dimen/dimen_border_size_xnormal" >
+
+        <ImageView
+            android:id="@+id/iv_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_border_size_small"
+            android:src="@drawable/ic_cart" />
+
+        <TextView
+            android:id="@+id/tv_cart_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@id/iv_cart"
+            android:layout_marginRight="@dimen/dimen_border_size_small"
+            android:background="@drawable/ic_num"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_font_size_xxsmall"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_border_size_small"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawablePadding="@dimen/dimen_border_size_xsmall"
+            android:textColor="@color/mall_light_gray"
+            android:textSize="@dimen/dimen_font_size_xnormal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/main_navigation_mall"
+            android:textColor="@color/mall_dark_gray"
+            android:textSize="@dimen/dimen_font_size_xnormal" />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/sv_mall"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background_gray"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_advertise"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_hot_menu_height"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_border_size_small"
+                android:background="@color/white"
+                android:padding="@dimen/dimen_border_size_lsmall" >
+
+                <TextView
+                    android:id="@+id/tv_hot_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_hot"
+                    android:drawablePadding="@dimen/dimen_border_size_xsmall"
+                    android:gravity="center"
+                    android:text="@string/str_hot_menu"
+                    android:textColor="@color/mall_light_gray"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+
+                <ImageView
+                    android:id="@+id/iv_find_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv_hot_menu"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/find_more" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dimen_border_size_small"
+                android:background="@color/white"
+                android:padding="@dimen/dimen_border_size_lsmall" >
+
+                <ImageView
+                    android:id="@+id/iv_hot_no1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hot1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_border_size_xnormal"
+                    android:layout_weight="4"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_hot_no2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hot2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dimen_border_size_small"
+                        android:layout_weight="16"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/iv_hot_no3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="9"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/hot3" />
+
+                        <ImageView
+                            android:id="@+id/iv_hot_no4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dimen_border_size_xnormal"
+                            android:layout_weight="10"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/hot4" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/ll_taber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_border_size_small"
+                android:background="@color/white"
+                android:padding="@dimen/dimen_border_size_lsmall" >
+
+                <TextView
+                    android:id="@+id/tv_rem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_org"
+                    android:drawablePadding="@dimen/dimen_border_size_xsmall"
+                    android:gravity="center"
+                    android:text="@string/str_recomment_organization"
+                    android:textColor="@color/mall_light_gray"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+
+                <ImageView
+                    android:id="@+id/iv_find_more_org"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv_rem"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/find_more" />
+
+                <com.hengtiansoft.tijianba.widget.NonScrollGridView
+                    android:id="@+id/gv_org_rem"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/iv_find_more_org"
+                    android:layout_marginTop="@dimen/dimen_border_size_small"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/dimen_border_size_small"
+                    android:numColumns="2"
+                    android:paddingBottom="@dimen/dimen_border_size_small"
+                    android:verticalSpacing="@dimen/dimen_border_size_small" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

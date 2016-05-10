@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/indicator_right_padding"
+                android:layout_marginRight="@dimen/indicator_right_padding"
+                android:layout_marginTop="@dimen/dimen_border_size_lsmall"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <TextView
+                    android:id="@+id/tv_redpocket_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_redpocket_money"
+                    android:paddingBottom="@dimen/dimen_border_size_xnormal"
+                    android:paddingLeft="@dimen/dimen_border_size_normal"
+                    android:text="@string/str_bonus"
+                    android:textSize="@dimen/dimen_font_size_lsmall" />
+
+                <TextView
+                    android:id="@+id/tv_redpocket_mon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_redpocket_money"
+                    android:layout_alignBottom="@+id/tv_redpocket_money"
+                    android:layout_toLeftOf="@+id/tv_redpocket_money"
+                    android:text="@string/redpocket_get_more"
+                    android:textColor="@color/org_orange"
+                    android:textSize="@dimen/dimen_font_size_xsmall" />
+
+                <TextView
+                    android:id="@+id/tv_redpocket_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="@dimen/dimen_border_size_xnormal"
+                    android:paddingLeft="@dimen/dimen_border_size_small"
+                    android:paddingRight="@dimen/dimen_border_size_xnormal"
+                    android:paddingTop="@dimen/dimen_border_size_xnormal"
+                    android:textColor="@color/org_orange"
+                    android:textSize="@dimen/dimen_font_size_large" />
+            </RelativeLayout>
+
+            <com.hengtiansoft.tijianba.widget.NonScrollListView
+                android:id="@+id/lv_redpocket_get"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/indicator_right_padding"
+                android:layout_marginRight="@dimen/indicator_right_padding"
+                android:background="@color/white"
+                android:divider="@null"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

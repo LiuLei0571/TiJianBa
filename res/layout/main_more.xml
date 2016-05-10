@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/detail_background_grey"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_border_size_xnormal"
+        android:paddingTop="@dimen/dimen_border_size_xnormal"
+        android:text="@string/main_navigation_more"
+        android:textColor="@color/org_dark_gray"
+        android:textSize="@dimen/dimen_font_size_xnormal" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="@null" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimen_border_size_xnormal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/more_background" >
+
+                <RelativeLayout
+                    android:id="@+id/rlyt_more_after"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/iv_more_logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dimen_border_size_xlarge"
+                        android:src="@drawable/more_logout" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/dimen_border_size_normal"
+                        android:layout_marginLeft="@dimen/dimen_border_size_large"
+                        android:layout_marginTop="@dimen/dimen_border_size_normal" >
+
+                        <ImageView
+                            android:id="@+id/iv_more_welcome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/more_welcome" />
+
+                        <TextView
+                            android:id="@+id/tv_more_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignRight="@+id/iv_more_welcome"
+                            android:layout_marginRight="@dimen/dimen_border_size_small"
+                            android:paddingBottom="@dimen/dimen_border_size_lsmall"
+                            android:text="13888888888"
+                            android:textColor="@color/phone_color"
+                            android:textSize="@dimen/dimen_font_size_xsmall" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlyt_more_before"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/iv_more_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dimen_border_size_xlarge"
+                        android:src="@drawable/more_login" />
+
+                    <ImageView
+                        android:id="@+id/iv_more_enter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dimen_border_size_normal"
+                        android:layout_toLeftOf="@+id/iv_more_login"
+                        android:src="@drawable/more_enter" />
+
+                    <ImageView
+                        android:id="@+id/iv_more_before"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/dimen_border_size_normal"
+                        android:layout_marginLeft="@dimen/dimen_border_size_large"
+                        android:layout_marginTop="@dimen/dimen_border_size_normal"
+                        android:src="@drawable/more_before" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_more_my_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_border_size_xnormal"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/dimen_border_size_xnormal"
+                android:paddingLeft="@dimen/dimen_border_size_normal"
+                android:paddingRight="@dimen/dimen_border_size_normal"
+                android:paddingTop="@dimen/dimen_border_size_xnormal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_right" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_order"
+                    android:drawablePadding="@dimen/dimen_border_size_normal"
+                    android:gravity="center_vertical"
+                    android:text="@string/more_my_order"
+                    android:textColor="@color/cart_grey"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_more_my_redpocket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_border_size_xnormal"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/dimen_border_size_xnormal"
+                android:paddingLeft="@dimen/dimen_border_size_normal"
+                android:paddingRight="@dimen/dimen_border_size_normal"
+                android:paddingTop="@dimen/dimen_border_size_xnormal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_right" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_bonus"
+                    android:drawablePadding="@dimen/dimen_border_size_normal"
+                    android:gravity="center_vertical"
+                    android:text="@string/more_my_redpocket"
+                    android:textColor="@color/cart_grey"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_more_my_attach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_border_size_xnormal"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/dimen_border_size_xnormal"
+                android:paddingLeft="@dimen/dimen_border_size_normal"
+                android:paddingRight="@dimen/dimen_border_size_normal"
+                android:paddingTop="@dimen/dimen_border_size_xnormal" 
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_right" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_attachment"
+                    android:drawablePadding="@dimen/dimen_border_size_normal"
+                    android:gravity="center_vertical"
+                    android:text="@string/more_my_attach"
+                    android:textColor="@color/cart_grey"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_more_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_border_size_xnormal"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/dimen_border_size_normal"
+                android:paddingTop="@dimen/dimen_border_size_xnormal" >
+
+                <ImageView
+                    android:id="@+id/iv_more_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/dimen_border_size_normal"
+                    android:src="@drawable/ic_right" />
+
+                <TextView
+                    android:id="@+id/tv_more_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_setting"
+                    android:drawablePadding="@dimen/dimen_border_size_normal"
+                    android:gravity="center_vertical"
+                    android:text="@string/more_setting"
+                    android:textColor="@color/cart_grey"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_more_setting"
+                    android:layout_marginLeft="@dimen/dimen_border_size_llarge"
+                    android:layout_marginTop="@dimen/dimen_border_size_normal"
+                    android:background="@drawable/seperate" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_more_system_messages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/dimen_border_size_xnormal"
+                android:paddingLeft="@dimen/dimen_border_size_normal"
+                android:paddingRight="@dimen/dimen_border_size_normal"
+                android:paddingTop="@dimen/dimen_border_size_xnormal" 
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_right" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_system_mess"
+                    android:drawablePadding="@dimen/dimen_border_size_normal"
+                    android:gravity="center_vertical"
+                    android:text="@string/more_system_messages"
+                    android:textColor="@color/cart_grey"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_more_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_border_size_xnormal"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/dimen_border_size_xnormal"
+                android:paddingLeft="@dimen/dimen_border_size_normal"
+                android:paddingRight="@dimen/dimen_border_size_normal"
+                android:paddingTop="@dimen/dimen_border_size_xnormal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_right" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_contact_me"
+                    android:drawablePadding="@dimen/dimen_border_size_normal"
+                    android:gravity="center_vertical"
+                    android:text="@string/more_contact"
+                    android:textColor="@color/cart_grey"
+                    android:textSize="@dimen/dimen_font_size_xnormal" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/dimen_border_size_lsmall"
+    android:paddingLeft="@dimen/dimen_border_size_normal"
+    android:paddingRight="@dimen/dimen_border_size_normal"
+    android:paddingTop="@dimen/dimen_border_size_lsmall" >
+
+    <ImageView
+        android:id="@+id/iv_menu"
+        android:layout_width="@dimen/dimen_image_width"
+        android:layout_height="@dimen/dimen_image_height"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dimen_border_size_xxsmall"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/dimen_border_size_xnormal"
+        android:src="@drawable/ic_family" />
+
+    <TextView
+        android:id="@+id/tv_menu_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_marginTop="@dimen/dimen_border_size_xxsmall"
+        android:layout_toRightOf="@id/iv_menu"
+        android:textColor="@color/org_dark_gray"
+        android:textSize="@dimen/dimen_font_size_small" />
+
+    <TextView
+        android:id="@+id/tv_menu_num_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_menu_name"
+        android:layout_below="@id/tv_menu_name"
+        android:layout_marginTop="@dimen/dimen_border_size_small"
+        android:text="@string/str_all"
+        android:textColor="@color/org_light_gray"
+        android:textSize="@dimen/dimen_font_size_xsmall" />
+
+    <TextView
+        android:id="@+id/tv_menu_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_menu_num_title"
+        android:layout_toRightOf="@id/tv_menu_num_title"
+        android:textColor="@color/org_orange"
+        android:textSize="@dimen/dimen_font_size_xsmall" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_menu_num_title"
+        android:layout_toRightOf="@id/tv_menu_num"
+        android:text="@string/str_num"
+        android:textColor="@color/org_light_gray"
+        android:textSize="@dimen/dimen_font_size_xsmall" />
+
+    <RelativeLayout
+        android:id="@+id/rlyt_price" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_menu_num_title"
+        android:layout_below="@id/tv_menu_num_title" >
+
+        <TextView
+            android:id="@+id/tv_menu_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/org_orange"
+            android:textSize="@dimen/dimen_font_size_large" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_border_size_xlarge"
+            android:layout_toRightOf="@id/tv_menu_price"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/textView_menu_price"
+                    android:text="@string/str_market_price"
+                    android:textColor="@color/org_light_gray" />
+                <TextView
+                    android:id="@+id/tv_menu_price_market"
+                    style="@style/textView_menu_price" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_border_size_normal"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/textView_menu_price"
+                    android:text="@string/str_plant_price" />
+
+                <TextView
+                    android:id="@+id/tv_menu_price_plat"
+                    style="@style/textView_menu_price" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/rlyt_price"
+        android:id="@+id/ll_menu_repay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_menu_name"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/textView_menu_repay"
+            android:text="@string/str_repay" />
+
+        <TextView
+            android:id="@+id/tv_menu_repay_num"
+            style="@style/textView_menu_repay" />
+
+        <TextView
+            style="@style/textView_menu_repay"
+            android:text="@string/str_yuan" />
+    </LinearLayout>
+
+</RelativeLayout>

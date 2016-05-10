@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" 
+    >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/ranking_tab_bg" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/textview_subscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/str_giftlist"
+            android:textColor="@color/ranking_light_gray"
+            android:textSize="@dimen/dimen_font_size_xnormal" />
+
+        <ImageButton
+            android:id="@+id/gift_list_finish"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_font_size_xsmall"
+            android:contentDescription="@null"
+            android:background="@drawable/paihang_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/gift_bg" >
+
+        <com.hengtiansoft.tijianba.widget.SlopeGiftTextView
+            android:id="@+id/tv_ranked"
+            style="@style/textview_subscribe"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="95dp"
+            android:gravity="center_vertical"
+            android:text="你上周获得第8名，可以领取以上奖品"
+            android:textColor="#ff7800"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/tv_ranked"
+            android:layout_marginTop="27dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.hengtiansoft.tijianba.widget.SlopeGiftTextView
+                style="@style/textview_subscribe_orange"
+                android:layout_marginTop="15dp"
+                android:text="@string/str_get_time"
+                android:textColor="#a6a6a6" />
+
+            <com.hengtiansoft.tijianba.widget.SlopeGiftTextView
+                style="@style/textview_subscribe_orange"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="@dimen/dimen_margin_size"
+                android:text="2015-04-02至2015-06-29"
+                android:textColor="@color/org_orange" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/gift_list_received"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout1"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@null"
+            android:text="领取奖励" 
+            android:background="#00000000"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/ranking_tab_bg" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/textview_subscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/str_week_giftlist"
+            android:textColor="@color/ranking_light_gray"
+            android:textSize="@dimen/dimen_font_size_xnormal" />
+    </RelativeLayout>
+
+
+    <include layout="@layout/gift_item"/>
+        
+</LinearLayout>
+</ScrollView>

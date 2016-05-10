@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/choice_item_photo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_img"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/choice_item_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/choice_item_photo"
+        android:src="@drawable/ic_cart_unselected" />
+
+</RelativeLayout>

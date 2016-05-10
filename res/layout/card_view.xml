@@ -1,0 +1,270 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/org_background_light_grey" >
+
+    <LinearLayout
+        android:id="@+id/ll_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen_border_size_lsmall"
+        android:paddingRight="@dimen/dimen_border_size_lsmall" >
+
+        <LinearLayout
+            android:id="@+id/ll_cardTitlePrePre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/cardTitlePrePreYear"
+                style="@style/CalendarCard.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_border_size_xsmall"
+                android:textColor="@color/org_holo_gray"
+                android:visibility="invisible" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/cardTitlePrePreMonth"
+                style="@style/CalendarCard.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="jjj"
+                android:textColor="@color/edt_grey" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_cardTitlePre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/cardTitlePreYear"
+                style="@style/CalendarCard.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_border_size_xsmall"
+                android:textColor="@color/org_holo_gray"
+                android:visibility="invisible" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/cardTitlePreMonth"
+                style="@style/CalendarCard.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="jjj"
+                android:textColor="@color/edt_grey" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_cardTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/cardTitleYear"
+                style="@style/CalendarCard.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_border_size_xsmall"
+                android:textColor="@color/org_holo_gray"
+                android:visibility="invisible" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/cardTitleMonth"
+                style="@style/CalendarCard.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:drawableLeft="@drawable/ic_heart"
+                android:drawablePadding="@dimen/dimen_border_size_xsmall"
+                android:drawableRight="@drawable/ic_heart"
+                android:text="jjj"
+                android:textColor="@color/edt_grey" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_cardTitleNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/cardTitleNextYear"
+                style="@style/CalendarCard.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_border_size_xsmall"
+                android:textColor="@color/org_holo_gray"
+                android:visibility="invisible" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/cardTitleNextMonth"
+                style="@style/CalendarCard.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gg"
+                android:textColor="@color/edt_grey" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_cardTitleNextNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/cardTitleNextNextYear"
+                style="@style/CalendarCard.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_border_size_xsmall"
+                android:textColor="@color/org_holo_gray"
+                android:visibility="invisible" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/cardTitleNextNextMonth"
+                style="@style/CalendarCard.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fff"
+                android:textColor="@color/edt_grey" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cardDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_Title"
+        android:layout_marginLeft="@dimen/dimen_border_size_lsmall"
+        android:layout_marginRight="@dimen/dimen_border_size_lsmall"
+        android:layout_marginTop="@dimen/dimen_border_size_lsmall"
+        android:background="@color/cal_grey"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cardDay1"
+            style="@style/CalendarCard.Day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/sub_green" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/cardDay2"
+            style="@style/CalendarCard.Day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/edt_grey" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/cardDay3"
+            style="@style/CalendarCard.Day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/edt_grey" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/cardDay4"
+            style="@style/CalendarCard.Day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/edt_grey" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/cardDay5"
+            style="@style/CalendarCard.Day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/edt_grey" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/cardDay6"
+            style="@style/CalendarCard.Day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/edt_grey" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/cardDay7"
+            style="@style/CalendarCard.Day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/sub_green" >
+        </TextView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cardDays"
+        android:layout_marginLeft="@dimen/dimen_border_size_lsmall"
+        android:layout_marginRight="@dimen/dimen_border_size_lsmall"
+        android:scrollbars="@null" >
+
+        <LinearLayout
+            android:id="@+id/cardGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/seperate"
+            android:orientation="vertical"
+            android:showDividers="middle" >
+
+            <include layout="@layout/card_row" />
+
+            <include layout="@layout/card_row" />
+
+            <include layout="@layout/card_row" />
+
+            <include layout="@layout/card_row" />
+
+            <include layout="@layout/card_row" />
+
+            <include layout="@layout/card_row" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

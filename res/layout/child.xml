@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/org_background_light_grey"
+    android:paddingBottom="@dimen/dimen_border_size_lsmall"
+    android:paddingLeft="@dimen/dimen_border_size_xnormal"
+    android:paddingRight="@dimen/dimen_border_size_normal"
+    android:paddingTop="@dimen/dimen_border_size_small" >
+
+    <CheckBox
+        android:id="@+id/chb_org"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/chb_heart" />
+
+    <TextView
+        android:id="@+id/tv_org_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_toRightOf="@id/chb_org"
+        android:text="杭州爱康国宾西溪分院"
+        android:textColor="@color/org_dark_gray"
+        android:textSize="@dimen/dimen_font_size_xnormal" />
+
+    <TextView
+        android:id="@+id/tv_org_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_org_name"
+        android:layout_below="@id/tv_org_name"
+        android:layout_marginBottom="@dimen/dimen_border_size_small"
+        android:layout_marginTop="@dimen/dimen_border_size_small"
+        android:text="专业体检中心"
+        android:textColor="@color/org_light_gray"
+        android:textSize="@dimen/dimen_font_size_small" />
+
+    <ImageView
+        android:id="@+id/iv_find_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_org_type"
+        android:layout_below="@id/tv_org_type"
+        android:src="@drawable/find_location" />
+
+    <TextView
+        android:id="@+id/tv_org_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_find_location"
+        android:layout_marginLeft="@dimen/dimen_border_size_xsmall"
+        android:layout_toRightOf="@id/iv_find_location"
+        android:singleLine="true"
+        android:text="文二西路718"
+        android:textColor="@color/org_holo_gray"
+        android:textSize="@dimen/dimen_font_size_lsmall" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_right"
+        android:visibility="gone"
+         />
+
+</RelativeLayout>

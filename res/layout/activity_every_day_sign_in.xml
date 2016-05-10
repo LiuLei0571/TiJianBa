@@ -1,0 +1,220 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_green_blue"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/tv_every_day_signin_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/org_background_grey"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_border_size_xnormal"
+        android:paddingTop="@dimen/dimen_border_size_xnormal"
+        android:text="@string/everyday_signin_title"
+        android:textColor="@color/org_dark_gray"
+        android:textSize="@dimen/dimen_font_size_xnormal" />
+
+    <LinearLayout
+        android:id="@+id/llyt_every_day_signin_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_every_day_signin_title"
+        android:background="@color/sub_green"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dimen_border_size_xnormal"
+        android:paddingTop="@dimen/dimen_border_size_xnormal" >
+
+        <TextView
+            android:id="@+id/tv_everyday_signin_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_border_size_normal"
+            android:text="@string/tv_everyday_signin_first"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_font_size_xnormal" />
+
+        <TextView
+            android:id="@+id/tv_everyday_signin_daycount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_font_size_xnormal" />
+
+        <TextView
+            android:id="@+id/tv_everyday_signin_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_day"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_font_size_xnormal" />
+
+        <TextView
+            android:id="@+id/tv_everyday_signin_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_border_size_xsmall"
+            android:layout_marginRight="@dimen/dimen_border_size_xsmall"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_font_size_large" />
+
+        <TextView
+            android:id="@+id/tv_everyday_signin_thrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_everyday_signin_thrid"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_font_size_xnormal" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_every_day_signin_redpocket_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llyt_every_day_signin_notice"
+        android:layout_marginTop="@dimen/dimen_border_size_small" >
+
+        <TextView
+            android:id="@+id/tv_everyday_signin_mulit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_border_size_small"
+            android:layout_marginRight="@dimen/dimen_border_size_xsmall"
+            android:layout_marginTop="@dimen/dimen_border_size_small"
+            android:layout_toLeftOf="@+id/tv_everyday_signin_num"
+            android:text="@string/everyday_signin_mulit"
+            android:textColor="@color/org_gray"
+            android:textSize="@dimen/dimen_border_size_normal" />
+
+        <TextView
+            android:id="@+id/tv_everyday_signin_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dimen_border_size_small"
+            android:paddingRight="@dimen/dimen_border_size_normal"
+            android:text="1"
+            android:textSize="@dimen/dimen_border_size_normal" />
+
+        <ImageView
+            android:id="@+id/img_everyday_signin_redpacket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_everyday_signin_mulit"
+            android:background="@drawable/everyday_signin_redpacket_small" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_everyday_signin_my_redpocket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/rl_every_day_signin_redpocket_small"
+        android:layout_marginTop="@dimen/dimen_border_size_xsmall"
+        android:paddingRight="@dimen/dimen_border_size_normal"
+        android:text="@string/everyday_signin_mypocket"
+        android:textColor="@color/cart_grey"
+        android:textSize="@dimen/dimen_font_size_xsmall" />
+
+    <ImageView
+        android:id="@+id/img_every_day_signin_redpocket_big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rylt_every_day_signin_btn"
+        android:layout_below="@+id/tv_everyday_signin_my_redpocket"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_border_size_normal"
+        android:src="@drawable/everyday_signin_redpacket_big" />
+
+    <RelativeLayout
+        android:id="@+id/rylt_every_day_signin_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/img_every_day_signin_house" >
+
+        <ImageView
+            android:id="@+id/img_every_day_signin_btn"
+            style="@style/imageView_rem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/btn_upload_enable" />
+
+        <TextView
+            android:id="@+id/tv_every_day_signin_btn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/every_day_signin_btn_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_font_size_xnormal" />
+
+        <LinearLayout
+            android:id="@+id/ll_red_pocket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/red_pocket_success_start"
+                android:textColor="@color/cart_grey"
+                android:textSize="@dimen/dimen_font_size_lsmall" />
+
+            <TextView
+                android:id="@+id/tv_red_pocket_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:textColor="@color/red_pocket_count"
+                android:textSize="@dimen/dimen_font_size_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/red_pocket"
+                android:textColor="@color/cart_grey"
+                android:textSize="@dimen/dimen_font_size_lsmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_everyday_after_signin_second"
+                android:textColor="@color/cart_grey"
+                android:textSize="@dimen/dimen_font_size_lsmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_ge"
+                android:textColor="@color/cart_grey"
+                android:textSize="@dimen/dimen_font_size_lsmall" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_every_day_signin_house"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/everyday_signin_background_house" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_every_day_signin_title"
+        android:background="@drawable/line_wave" />
+
+</RelativeLayout>

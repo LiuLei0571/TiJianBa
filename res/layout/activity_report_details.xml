@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/detail_background_grey"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/org_background_grey"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/dimen_border_size_xnormal"
+        android:paddingTop="@dimen/dimen_border_size_xnormal"
+        android:text="@string/str_report_details"
+        android:textColor="@color/org_dark_gray"
+        android:textSize="@dimen/dimen_font_size_xnormal" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv" 
+        android:scrollbars="none"
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dimen_border_size_normal"
+                android:paddingRight="@dimen/dimen_border_size_normal" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/textview_subscribe"
+                        android:layout_gravity="center_vertical|left"
+                        android:text="@string/health_management_report_name" />
+
+                    <TextView
+                        android:id="@+id/tv_reportdetail_name"
+                        style="@style/textview_subscribe"
+                        android:layout_gravity="center_vertical|right"
+                        android:gravity="center_vertical|right" />
+                </FrameLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seperate" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dimen_border_size_normal"
+                android:paddingRight="@dimen/dimen_border_size_normal" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/textview_subscribe"
+                        android:layout_gravity="center_vertical|left"
+                        android:text="@string/health_management_time" />
+
+                    <TextView
+                        android:id="@+id/tv_reportdetail_time"
+                        style="@style/textview_subscribe"
+                        android:layout_gravity="center_vertical|right"
+                        android:gravity="center_vertical|right" />
+                </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seperate" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dimen_border_size_normal"
+                android:paddingRight="@dimen/dimen_border_size_normal" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/textview_subscribe"
+                        android:layout_gravity="center_vertical|left"
+                        android:text="@string/health_management_organization" />
+
+                    <TextView
+                        android:id="@+id/tv_reportdetail_organization"
+                        style="@style/textview_subscribe"
+                        android:layout_gravity="center_vertical|right"
+                        android:gravity="center_vertical|right" />
+                </FrameLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seperate" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_border_size_normal"
+                android:paddingRight="@dimen/dimen_border_size_normal" >
+
+                <TextView
+                    style="@style/textview_subscribe"
+                    android:layout_gravity="center_vertical|left"
+                    android:text="@string/health_managment_detail" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/img_pdf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_border_size_normal"
+                    android:src="@drawable/ic_pdf"
+                    android:visibility="gone" />
+
+                <com.hengtiansoft.tijianba.util.MyGridView
+                    android:id="@+id/gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_border_size_xsmall"
+                    android:columnWidth="@dimen/activity_horizontal_margin"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/dimen_border_size_xsmall"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:verticalSpacing="@dimen/dimen_border_size_xsmall" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
