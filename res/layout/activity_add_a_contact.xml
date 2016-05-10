@@ -97,7 +97,7 @@
                     android:layout_toRightOf="@id/tv_contact"
                     android:background="@null"
                     android:ems="5"
-                    android:singleLine="true"
+                   
                     android:textSize="@dimen/dimen_font_size_xnormal" />
 
                 <ImageView
